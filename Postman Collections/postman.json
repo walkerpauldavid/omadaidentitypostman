@@ -1268,9 +1268,9 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": {
+			"clientSecret": "-Tx8Q~BFSnD4FyB6xWH.Zth7.iyBtruT.LKuRa35",
 			"clientId": "08eeb6a4-4aee-406f-baa5-4922993f09f3",
 			"scope": "api://08eeb6a4-4aee-406f-baa5-4922993f09f3/.default\n",
-			"clientSecret": "RId8Q~7g5.FeG2EeNs5cZMiofIEjoP1k02buXal0",
 			"grant_type": "client_credentials",
 			"tokenName": "OmadaToken",
 			"client_authentication": "body",
@@ -1282,7 +1282,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9375638f-a161-40cd-bce1-f181c16d25b6",
+				"id": "9a5602f0-a5b7-44da-8a7b-15e42b5e0a93",
 				"type": "text/javascript",
 				"requests": {},
 				"exec": [
@@ -1293,7 +1293,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "71130fe4-e329-462f-96ae-9da99d7eab5a",
+				"id": "661f90b1-7184-48d3-93cc-cae9eac9d969",
 				"type": "text/javascript",
 				"requests": {},
 				"exec": [
