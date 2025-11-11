@@ -1268,7 +1268,7 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": {
-			"clientSecret": "{{Cl",
+			"clientSecret": "{{ClientSecret}}",
 			"clientId": "{{ClientID}}",
 			"scope": "api://08eeb6a4-4aee-406f-baa5-4922993f09f3/.default\n",
 			"grant_type": "client_credentials",
@@ -1282,7 +1282,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6acc525a-9724-4f9b-af03-448f6004f590",
+				"id": "fb87b877-0e7c-42cf-9685-fa40ea32dc60",
 				"type": "text/javascript",
 				"requests": {},
 				"exec": [
@@ -1293,7 +1293,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2892f64a-fa7e-4057-8583-368d89a67eef",
+				"id": "5b9a4245-7267-418d-9ce1-a2a7acef8627",
 				"type": "text/javascript",
 				"requests": {},
 				"exec": [
