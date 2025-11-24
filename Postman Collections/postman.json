@@ -92,7 +92,7 @@
 			"response": []
 		},
 		{
-			"name": "[OData] Query User Copy",
+			"name": "Update User",
 			"id": "011fab9c-6355-45fd-9f64-7300392470df",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
