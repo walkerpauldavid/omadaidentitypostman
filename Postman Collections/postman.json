@@ -551,6 +551,40 @@
 						"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
 					},
 					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Access Request for Identity Copy",
+					"id": "37a2f230-77b4-47c6-83da-77ab97e3b89c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6InEtMjNmYWxldlpoaEQzaG05Q1Fia1A1TVF5VSJ9.eyJhdWQiOiJjNDNjNDA4Zi1jM2EzLTRkMDItYTA3MS1lYzlkMmIwM2Q4YzQiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMjA1MDBkMjEtMTcwMC00NmI1LWI2NTMtNjhlMmViYzk4YWYwL3YyLjAiLCJpYXQiOjE3MTMyOTgyNzYsIm5iZiI6MTcxMzI5ODI3NiwiZXhwIjoxNzEzMzAyMTc2LCJhaW8iOiJBU1FBMi84V0FBQUFuUXhVSG9WQVBwUzErMjdjcGxMbnRKS1RONm0vQWFCNWdObU9VekpIazd3PSIsImF6cCI6ImM0M2M0MDhmLWMzYTMtNGQwMi1hMDcxLWVjOWQyYjAzZDhjNCIsImF6cGFjciI6IjEiLCJvaWQiOiI4NTU3NDE0NS0xNDk5LTRiNWEtYTZlMi02OTg0ZDM4ODY1ZWYiLCJyaCI6IjAuQVhnQUlRMVFJQUFYdFVhMlUyamk2OG1LOEk5QVBNU2p3d0pOb0hIc25Tc0QyTVI0QUFBLiIsInN1YiI6Ijg1NTc0MTQ1LTE0OTktNGI1YS1hNmUyLTY5ODRkMzg4NjVlZiIsInRpZCI6IjIwNTAwZDIxLTE3MDAtNDZiNS1iNjUzLTY4ZTJlYmM5OGFmMCIsInV0aSI6InozM3FjM0NYUkVDb011T3AzUDJMQUEiLCJ2ZXIiOiIyLjAifQ.9qAnKQO6sW_SiXAe_UCw74Z0CCPtFIi8oWYoV3L6xyrC_Zmd6ps1fYBCZD16ONQUp4bfBek-YNlw4nLQUN-9U1hTdI0rbNHgdD9HZOEWS1yulELDQQBL6m6cKOwqRUi3Zy0iCfLgHGrjXB1hailgpkjeZ72iXPM86fZm-d0qKOKwj0sjx5_ECqinU04wUr7iILJNFHGJFH7O4LwaEfS-Igswvq-U9ORxtfcjJ6yT_l8FHBqwAi3NuRWaDP4f9a8A1Q7BWfrVHNU512BrmJUqViWfEIoqiwn1FlIMuk7OvsA59aPyrUPDODnucE9vrj3bMdPD9eyqy07UukB__kyzKg"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest { resources(filter: \\\"Account Operators\\\")  { description id }}}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
+					},
+					"response": []
 				}
 			],
 			"id": "5a5715df-7863-4cb6-9b54-2c00650fb2f1"
@@ -596,19 +630,6 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy"
-					},
-					"response": []
-				},
-				{
-					"name": "[OData] Retrieve All Assignment Policies",
-					"id": "ee5a5585-8c12-43a2-a66b-3e0fcebc9dea",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
 					},
 					"response": []
 				}
@@ -1111,19 +1132,6 @@
 			"response": []
 		},
 		{
-			"name": "[OData] Retrieve All Violations",
-			"id": "cedc279e-1811-42d8-b30e-5efed44de800",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
-			},
-			"response": []
-		},
-		{
 			"name": "[OData] Add HSA Commission assignment",
 			"id": "366b5951-8235-4f6e-869b-e25f9e35710f",
 			"protocolProfileBehavior": {
@@ -1221,40 +1229,6 @@
 					]
 				},
 				"url": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Access Request for Identity Copy",
-			"id": "37a2f230-77b4-47c6-83da-77ab97e3b89c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6InEtMjNmYWxldlpoaEQzaG05Q1Fia1A1TVF5VSJ9.eyJhdWQiOiJjNDNjNDA4Zi1jM2EzLTRkMDItYTA3MS1lYzlkMmIwM2Q4YzQiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMjA1MDBkMjEtMTcwMC00NmI1LWI2NTMtNjhlMmViYzk4YWYwL3YyLjAiLCJpYXQiOjE3MTMyOTgyNzYsIm5iZiI6MTcxMzI5ODI3NiwiZXhwIjoxNzEzMzAyMTc2LCJhaW8iOiJBU1FBMi84V0FBQUFuUXhVSG9WQVBwUzErMjdjcGxMbnRKS1RONm0vQWFCNWdObU9VekpIazd3PSIsImF6cCI6ImM0M2M0MDhmLWMzYTMtNGQwMi1hMDcxLWVjOWQyYjAzZDhjNCIsImF6cGFjciI6IjEiLCJvaWQiOiI4NTU3NDE0NS0xNDk5LTRiNWEtYTZlMi02OTg0ZDM4ODY1ZWYiLCJyaCI6IjAuQVhnQUlRMVFJQUFYdFVhMlUyamk2OG1LOEk5QVBNU2p3d0pOb0hIc25Tc0QyTVI0QUFBLiIsInN1YiI6Ijg1NTc0MTQ1LTE0OTktNGI1YS1hNmUyLTY5ODRkMzg4NjVlZiIsInRpZCI6IjIwNTAwZDIxLTE3MDAtNDZiNS1iNjUzLTY4ZTJlYmM5OGFmMCIsInV0aSI6InozM3FjM0NYUkVDb011T3AzUDJMQUEiLCJ2ZXIiOiIyLjAifQ.9qAnKQO6sW_SiXAe_UCw74Z0CCPtFIi8oWYoV3L6xyrC_Zmd6ps1fYBCZD16ONQUp4bfBek-YNlw4nLQUN-9U1hTdI0rbNHgdD9HZOEWS1yulELDQQBL6m6cKOwqRUi3Zy0iCfLgHGrjXB1hailgpkjeZ72iXPM86fZm-d0qKOKwj0sjx5_ECqinU04wUr7iILJNFHGJFH7O4LwaEfS-Igswvq-U9ORxtfcjJ6yT_l8FHBqwAi3NuRWaDP4f9a8A1Q7BWfrVHNU512BrmJUqViWfEIoqiwn1FlIMuk7OvsA59aPyrUPDODnucE9vrj3bMdPD9eyqy07UukB__kyzKg"
-					}
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Impersonate-User",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest { resources(filter: \\\"Account Operators\\\")  { description id }}}\",\"variables\":{}}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
 			},
 			"response": []
 		}
