@@ -15,12 +15,6 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6InEtMjNmYWxldlpoaEQzaG05Q1Fia1A1TVF5VSJ9.eyJhdWQiOiIzOWNiNjIxOC0xNTU5LTRkNzctYmNiZi0wZDA5NzVhMGZkZWMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZWM2ZDFjNjItYjJkOC00MGY5LWFlMzgtMjczNWMyYmQ1OTI1L3YyLjAiLCJpYXQiOjE3MTM4NjQzMjcsIm5iZiI6MTcxMzg2NDMyNywiZXhwIjoxNzEzODY4MjI3LCJhaW8iOiJBU1FBMi84V0FBQUF2R1FoS2NNR3NRSERCK3VIcjNDVitmbDZaSmVrZTVSa2Q0UHZ1bkwzRXJjPSIsImF6cCI6IjQwN2U3M2Q1LWVkYzUtNDhlNS05NzFmLTdlZjRiYWMzZjk0NCIsImF6cGFjciI6IjEiLCJvaWQiOiIxNDE4OWQ1Ni00YmMxLTQ1NmMtYjI5Mi0wMjMwMjcxODY5ZTkiLCJyaCI6IjAuQVJBQVloeHQ3Tml5LVVDdU9DYzF3cjFaSlJoaXl6bFpGWGROdkw4TkNYV2dfZXdRQUFBLiIsInN1YiI6IjE0MTg5ZDU2LTRiYzEtNDU2Yy1iMjkyLTAyMzAyNzE4NjllOSIsInRpZCI6ImVjNmQxYzYyLWIyZDgtNDBmOS1hZTM4LTI3MzVjMmJkNTkyNSIsInV0aSI6Ii1VS0pTLXNhb0VxcWhZby14dVJpQUEiLCJ2ZXIiOiIyLjAifQ.MbOxZ8qCkw88N93v3x6mvf8MW672s9x--2ubCwV44Sssf12XabuE8vAFEB7Zx2979Tf0YOqn5vZlm0hVrtfLbnkmQ2PDQQV8SXj4v4eP0IwgNQ0rAlI-wKIJSxt7FmouZpNuZ6nllv_veJrXm45h6r1HzgZ37_dRl4QGDZru3ptwvh7KTTpownrcK6wcNn-oVxvRAuu7VWDteL37de4RLfEwjmOWy_3skrAN3bqw8YMBnkGBlsYacMh950q2er64S_xY_YvsTCgjHtSfKBljDZM_VjJDSelH3VjcBycBV9fIoBdlopN7gfnwjWotPJG5dMEwWIXPhgfK1Y38SfOr0A"
-							}
-						},
 						"method": "GET",
 						"header": [
 							{
@@ -147,71 +141,12 @@
 					"response": []
 				},
 				{
-					"name": "[OData] New Identity Copy",
-					"id": "a7217f17-604d-4cec-97e4-1018646ba297",
-					"protocolProfileBehavior": {
-						"strictSSL": true,
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							},
-							{
-								"key": "oisauthtoken",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "SAMLNameID",
-								"value": "patrick.kelley@omadaidentity.com",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "OISaaS_WS_gw3793",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "oissamlrequestid",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"IDENTITYID\": \"XXLB00101\",\r\n    \"FIRSTNAME\": \"Lea\",\r\n    \"LASTNAME\": \"Black\",\r\n    \"JOBTITLE\": \"Assistant\",\r\n    \"VALIDFROM\": \"2016-01-01T01:00:00+01:00\",\r\n    \"VALIDTO\": \"9999-12-31T01:00:00+01:00\",\r\n    \"IDENTITYSTATUS\": {\r\n        \"UId\": \"a4ed4124-9b94-43a0-92c0-e71fba733049\"\r\n    },\r\n    \"IDENTITYCATEGORY\": {\r\n        \"Id\": \"561\"\r\n    },\r\n    \"IDENTITYTYPE\": {\r\n        \"UId\": \"d13624f9-905d-4bc5-a6cc-2a4589c26be4\"\r\n    }\r\n}"
-						},
-						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Identity"
-					},
-					"response": []
-				},
-				{
 					"name": "[GraphQL] Get Identity Contexts",
 					"id": "98384d12-b5b7-4241-b3e1-e6fdb19b6cab",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IkhTMjNiN0RvN1RjYVUxUm9MSHdwSXEyNFZZZyJ9.eyJhdWQiOiIwOGVlYjZhNC00YWVlLTQwNmYtYmFhNS00OTIyOTkzZjA5ZjMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiL3YyLjAiLCJpYXQiOjE3NTkzMzgyODcsIm5iZiI6MTc1OTMzODI4NywiZXhwIjoxNzU5MzQyMTg3LCJhaW8iOiJrMkpnWUdEMWZHczl6ZCt1ZFh0Y0lHZFh1WUhZK3d0Slo5OHp0b2dGeUd6d1k4eWUvUVFBIiwiYXpwIjoiMDhlZWI2YTQtNGFlZS00MDZmLWJhYTUtNDkyMjk5M2YwOWYzIiwiYXpwYWNyIjoiMSIsIm9pZCI6IjhjMTYzOTRmLTg2NTgtNGRmZi1iOWMwLWE1MTkxYTViNzU3OCIsInJoIjoiMS5BVTRBNjVValZOLTJGMGF2TlJIZXRsbmZlNlMyN2dqdVNtOUF1cVZKSXBrX0NmTVdBUUJPQUEuIiwic3ViIjoiOGMxNjM5NGYtODY1OC00ZGZmLWI5YzAtYTUxOTFhNWI3NTc4IiwidGlkIjoiNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiIiwidXRpIjoianVlUFRhWkM0VWFQNWVNYlExWXBBQSIsInZlciI6IjIuMCIsInhtc19mdGQiOiJhcDRHWF94Sm83TFdHSWVtM0YtTmpJcW44WUFyWEFINlFiZkxzNkRZS29VQmMzZGxaR1Z1WXkxa2MyMXoifQ.GHpI-kA3VYdXz0SysR9Ydl4MKLw-09Js9wRI1UZc5WYiXdN1at7H8MZxKR1Ucld3VcgWMIqClWlMDp7Oy74Fnm6dejriimQvMz-ozZCh-W76zyIi6Qn6HU6IX7zJJm4UZ0f-8Q-igpt5BPjCRLZM3bODljj9LWX-NWHjEeoP5tukBwY75y1Qn5MykF6Z7qSLdUqp_pN_ZOpkYsWP5PhesWE8c-wd7JfcfHhJnzhs4G0LBVWsQn36-PiEnsinqoDlcta2Owr-mSBN-6oRSHUW1fjI0N344nslomoayTz08GB4n2--BBDNV3urpEb_ILik_7tdelk94bEBbOgqgQfCEw"
-							}
-						},
 						"method": "POST",
 						"header": [
 							{
@@ -228,6 +163,60 @@
 							}
 						},
 						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Identity Calculation Log",
+					"id": "8ec73fce-d59e-429e-b92d-ecb6f4d257c9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  logs {\r\n    identityCalculation(identityId: \"7ac8b482-272f-4bf0-9339-ce3742c2b4ca\")\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resources Systems Contexts for Identity",
+					"id": "9dc95867-71f7-4e56-bdf5-aadac2f9f7db",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {accessRequest {contexts(identityIds:[\\\"e3e869c4-369a-476e-a969-d57059d0b1e4\\\"]) {id name}reasons {id name} systems(filter:\\\"\\\", sortColumn: \\\"name\\\", sortOrder: ASC) {id name}}}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
 					},
 					"response": []
 				}
@@ -510,6 +499,58 @@
 						"url": "{{OmadaInstanceURL}}/api/Domain/"
 					},
 					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Access Requests Detailed",
+					"id": "e8fe3025-cdce-41a3-9e5b-cc03c44c5a83",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Create access request Test",
+					"id": "2b6a641b-e851-4c94-86b7-3259f5eebb25",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation MyMutation {\r\n  createAccessRequest(\r\n    accessRequest: {reason: \"Rozi told me to do it\", identities: {id: \"5da7f8fc-0119-46b0-a6b4-06e5c78edf68\"}, \r\nresources: {id: \"fa58b111-7e91-4723-b998-2df8c0758568\"}, context: \"227266b8-4810-4ba5-98f2-a974e181adcf\"}\r\n  ) {\r\n    id\r\n    status {\r\n      approvalStatus\r\n      requestAssignmentState\r\n    }\r\n    resource {\r\n      name\r\n      id\r\n      system {\r\n        name\r\n        id\r\n      }\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
+					},
+					"response": []
 				}
 			],
 			"id": "5a5715df-7863-4cb6-9b54-2c00650fb2f1"
@@ -575,14 +616,352 @@
 			"id": "16a0ca22-7672-46b0-9d14-cd440687766e"
 		},
 		{
-			"name": "Approvals",
-			"item": [],
+			"name": "Approval",
+			"item": [
+				{
+					"name": "[GraphQL] Get Manager Approvals",
+					"id": "060809b5-fe35-4876-940e-5ab7b718b77e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query getManagerApprovals {\r\n  accessRequestApprovalSurveyQuestions(\r\n    filters: {workflowStep: {filterValue: \"ManagerApproval\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      reason\r\n      surveyId\r\n      surveyObjectKey\r\n      workflowStep\r\n      context {\r\n        displayName\r\n        type\r\n        id\r\n      }\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resource Owner Approvals",
+					"id": "b854a3d7-2090-41cb-aa93-4644865cf3f8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IkhTMjNiN0RvN1RjYVUxUm9MSHdwSXEyNFZZZyJ9.eyJhdWQiOiIwOGVlYjZhNC00YWVlLTQwNmYtYmFhNS00OTIyOTkzZjA5ZjMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiL3YyLjAiLCJpYXQiOjE3NTk4NjYxMTAsIm5iZiI6MTc1OTg2NjExMCwiZXhwIjoxNzU5ODcxNTA1LCJhaW8iOiJBVlFBcS84YUFBQUE3SU5DaXY3S3oxQkdGV25GTnMwbUlyQ2tvVnUwODVJT0hJSmFiQUtyMkYrZ3V6a2ptUVlPS2FHVUkrb1NieSswTkhrZlZ3NUZrUTluV1pPaGZvRHkxSVlLSFg5d3pJRXlqalB6c0QvNTVLTT0iLCJhenAiOiI3NGQwMWE1Yi1kMzRhLTQwZGMtYjI2MS1hZjJkNTNlYWIzMTUiLCJhenBhY3IiOiIwIiwibmFtZSI6Ikhhbm5hIFVscmljaCIsIm9pZCI6IjE5ZDQ3ZjEwLTc5ZDctNDFjNy04MWY3LTE5ODcwOGE4ODBlNiIsInByZWZlcnJlZF91c2VybmFtZSI6IkhBTlVMUkA1NG12NGMub25taWNyb3NvZnQuY29tIiwicmgiOiIxLkFVNEE2NVVqVk4tMkYwYXZOUkhldGxuZmU2UzI3Z2p1U205QXVxVkpJcGtfQ2ZNV0FSbE9BQS4iLCJzY3AiOiJBUEkiLCJzaWQiOiIwMDk5ODhjOS0yMjU4LWJlOTktOTNjNi00NjFhYTZjNTM5NTkiLCJzdWIiOiJfRHRuWkw3X0V4NTFHOVJWLVhjbDlockFGY2x2TV8zZGs4UGxlem54V1hjIiwidGlkIjoiNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiIiwidXRpIjoiVW5jalc3Tkg1VUdCU0xjR2hIMGlBQSIsInZlciI6IjIuMCIsInhtc19mdGQiOiJSZlVXT2lIcHRXRzhsUXVNakVVTUplblFVVHZUaVEwNE92b0JreTVMdVVnQlpuSmhibU5sWXkxa2MyMXoifQ.fZjucRRDb6KqElLEpAvg3PY9O2sXjTEJ4LaV6uStw7dNHE-SoGEWpRhKLHLbiapJyKQSKlfHTjIYf_-jkCv1V927m1Ya9tpuKyP5jh9HATO1JFQxkfrBDu4VtAt-WUGHJOv-oeylHWlmkuYAxQPCfu0qZ3vsrUcNckobtqhAhzHcF5GucNkgufD2_TSTI3ibL8B_D5PM9nvu2tI90IixYS31g2UX3bXy2aNnU3BEgyE9Tv5W2cKFQvQ8ItUxxEVQQBrB3KwWzO1q92Qfp2MbN1ES8JX9mnEVdBYcu1tr461ZVrwxDyA9_JLe78dpieAGHEZo7K5ysSlHCQwwBs8LtA"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query getResourceOwnerApprovals {\r\n  accessRequestApprovalSurveyQuestions(\r\n    filters: {workflowStep: {filterValue: \"ResourceOwnerApproval\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      reason\r\n      surveyId\r\n      surveyObjectKey\r\n      workflowStep\r\n      context {\r\n        displayName\r\n        type\r\n        id\r\n      }\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				}
+			],
 			"id": "a9716b66-4aeb-41d9-b253-1424d197abdc"
 		},
 		{
-			"name": "New Folder",
-			"item": [],
+			"name": "Resource",
+			"item": [
+				{
+					"name": "[GraphQL] Get Resources for System",
+					"id": "b654cba5-94f5-46ca-af15-6c3d3f5460f2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlhSdmtvOFA3QTNVYVdTblU3Yk05blQwTWpoQSJ9.eyJhdWQiOiIzOWNiNjIxOC0xNTU5LTRkNzctYmNiZi0wZDA5NzVhMGZkZWMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZWM2ZDFjNjItYjJkOC00MGY5LWFlMzgtMjczNWMyYmQ1OTI1L3YyLjAiLCJpYXQiOjE3MTA3NjA2MjYsIm5iZiI6MTcxMDc2MDYyNiwiZXhwIjoxNzEwNzY0NTI2LCJhaW8iOiJBU1FBMi84V0FBQUFPdmlJMDVQbmI0RFY4Mkd2RUhBY2xCWXRMN091bVhCdGxVUE9EZzVWNlpjPSIsImF6cCI6IjQwN2U3M2Q1LWVkYzUtNDhlNS05NzFmLTdlZjRiYWMzZjk0NCIsImF6cGFjciI6IjEiLCJvaWQiOiIxNDE4OWQ1Ni00YmMxLTQ1NmMtYjI5Mi0wMjMwMjcxODY5ZTkiLCJyaCI6IjAuQVJBQVloeHQ3Tml5LVVDdU9DYzF3cjFaSlJoaXl6bFpGWGROdkw4TkNYV2dfZXdRQUFBLiIsInN1YiI6IjE0MTg5ZDU2LTRiYzEtNDU2Yy1iMjkyLTAyMzAyNzE4NjllOSIsInRpZCI6ImVjNmQxYzYyLWIyZDgtNDBmOS1hZTM4LTI3MzVjMmJkNTkyNSIsInV0aSI6Ijl1MVh5TnYxZEUyM0FRcjk3R29MQUEiLCJ2ZXIiOiIyLjAifQ.du3gyv69huLlOEpJhSYjFLSuxMosSfPp_C0L-LpM1i8uJ8uW3VstKvYgBjJwDmdUJ9a6zdaRUFzgDIVqnJwTyXiu1b0ImOodkx_WcZXTVCJqqJv_R9RrTY4QIjUcewfnAIgsfextNyg6utvWRy5lPTgI6Ba_0iz61dIei7rMVTaSy_qekzSWnx8NB3OVx_5VSPuemZq9KOCLs0HVGOiK-rjMgLYmq-D4kuUlsS7ciLuYBYwhJfXPva8y_UaCY-QI-4lmJyobkBy6_J5bWvrGCU8aaCv9WF2zxpiVBLhDx4eExq3JCym_E3P0SM9OJDoLbnn_k8xHfaf7HuZUl3FQng"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest {resources(systemId: \\\"1f18d52c-9212-4754-b15f-afd5951ea713\\\", sortColumn: \\\"popularity\\\", sortOrder: ASC, includeThirdPartyExcludedResources: false, contextId: \\\"d152e0e1-5bdf-4c8f-88ea-404ee2cdc370\\\",rows:{{RetrieveMaxNumberOfResources}}, searchFilter:\\\"\\\") {id name description } }}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resource Description",
+					"id": "cba8fb16-e9e5-4496-97b2-c223ce21362f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest { resources(filter: \\\"Account Operators\\\")  { description id }}}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Resource Folders",
+					"id": "b781a524-456c-4a6a-a8d9-5c4961fa9857",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resources With Filter (Not Approved, AD Security Groups)",
+					"id": "236fed19-b325-4887-8cd1-bf4614f43072",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  calculatedAssignments(\r\n    filters: {identityName: {filterValue: \"BERRY\", operator: CONTAINS}, resourceTypeName: {filterValue: \"Active Directory - Security Group\", operator: CONTAINS}, complianceStatus: {filterValue: \"NOT APPROVED\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      id\r\n      complianceStatus\r\n      disabled\r\n      validFrom\r\n      validTo\r\n      violations {\r\n        description\r\n        violationStatus\r\n      }\r\n      account {\r\n        accountName\r\n        accountType {\r\n          name\r\n          id\r\n        }\r\n        system {\r\n          name\r\n          id\r\n        }\r\n      }\r\n      identity {\r\n        identityId\r\n        lastName\r\n        firstName\r\n        id\r\n        accounts {\r\n          accountName\r\n          system {\r\n            name\r\n            id\r\n          }\r\n        }\r\n      }\r\n      resource {\r\n        name\r\n        id\r\n        description\r\n        system {\r\n          id\r\n          name\r\n        }\r\n        resourceType {\r\n          id\r\n          name\r\n        }\r\n      }\r\n      reason {\r\n        description\r\n        reasonType\r\n        causeObjectKey\r\n      }\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				}
+			],
 			"id": "8811a3d0-dac6-4cc8-82f2-fc511a46605e"
+		},
+		{
+			"name": "System",
+			"item": [
+				{
+					"name": "[OData] Retrieve Systems",
+					"id": "aac77920-216a-4af9-aa76-5e6e955b5cf2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Systems",
+					"id": "1e4b7e0d-336e-42eb-abf1-dde5b535ad1d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/CalculatedAssignment"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Systems Copy",
+					"id": "6558c1d1-29d7-4891-b110-d14b110f9eef",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/BuiltIn/CalculatedAssignments?$filter=Identity/Id eq 1000009159&$select=AssignmentKey&$expand=Identity,Resource,ResourceType",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"BuiltIn",
+								"CalculatedAssignments"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "Identity/Id eq 1000009159"
+								},
+								{
+									"key": "$select",
+									"value": "AssignmentKey"
+								},
+								{
+									"key": "$expand",
+									"value": "Identity,Resource,ResourceType"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "ef4ffdb7-4c49-462a-b003-d1afe90af9e8"
+		},
+		{
+			"name": "SoD",
+			"item": [
+				{
+					"name": "[GraphQL] Get SoD",
+					"id": "fca694cd-06f6-4451-820b-2316b96f3895",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				}
+			],
+			"id": "1c5d752b-bd66-4732-86b6-285e12bce9af"
+		},
+		{
+			"name": "Compliance",
+			"item": [
+				{
+					"name": "[GraphQL] Get Compliance Workbench Data Copy",
+					"id": "ca858bdb-aaeb-4357-84c9-51adbb25ca75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate_User",
+								"value": "HANULR@54MV4C.ONMICROSOFT.COM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  complianceWorkbenchData(\r\n    filters: {isApplicationAccountsSystemVisible: false, showAccounts: true}\r\n  ) {\r\n    system {\r\n      systemCategory {\r\n        id\r\n      }\r\n      name\r\n    }\r\n    complianceStatus {\r\n      explicitlyApproved\r\n      implicitlyApproved\r\n      implicitlyAssigned\r\n      notApproved\r\n      inViolation\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Compliance Workbench Data",
+					"id": "6db3a748-0719-4458-a0ea-ed9a5ff2b6c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate_User",
+								"value": "HANULR@54MV4C.ONMICROSOFT.COM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  complianceWorkbenchData(\r\n    filters: {isApplicationAccountsSystemVisible: false, showAccounts: true}\r\n  ) {\r\n    system {\r\n      systemCategory {\r\n        id\r\n      }\r\n      name\r\n    }\r\n    complianceStatus {\r\n      explicitlyApproved\r\n      implicitlyApproved\r\n      implicitlyAssigned\r\n      notApproved\r\n      inViolation\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				}
+			],
+			"id": "32aa320e-d555-4696-b52a-85f86f2d70cd"
 		},
 		{
 			"name": "[OData] Query Identity With Firstname LastName filter",
@@ -732,32 +1111,6 @@
 			"response": []
 		},
 		{
-			"name": "[OData] Retrieve Resource Folders",
-			"id": "b781a524-456c-4a6a-a8d9-5c4961fa9857",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
-			},
-			"response": []
-		},
-		{
-			"name": "[OData] Retrieve Systems",
-			"id": "aac77920-216a-4af9-aa76-5e6e955b5cf2",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
-			},
-			"response": []
-		},
-		{
 			"name": "[OData] Retrieve All Violations",
 			"id": "cedc279e-1811-42d8-b30e-5efed44de800",
 			"protocolProfileBehavior": {
@@ -834,74 +1187,6 @@
 			"response": []
 		},
 		{
-			"name": "[OData] Retrieve Systems",
-			"id": "1e4b7e0d-336e-42eb-abf1-dde5b535ad1d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true,
-				"disabledSystemHeaders": {
-					"host": true
-				}
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": "{{OmadaInstanceURL}}/OData/DataObjects/CalculatedAssignment"
-			},
-			"response": []
-		},
-		{
-			"name": "[OData] Retrieve Systems Copy",
-			"id": "6558c1d1-29d7-4891-b110-d14b110f9eef",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true,
-				"disabledSystemHeaders": {
-					"host": true
-				}
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{OmadaInstanceURL}}/OData/BuiltIn/CalculatedAssignments?$filter=Identity/Id eq 1000009159&$select=AssignmentKey&$expand=Identity,Resource,ResourceType",
-					"host": [
-						"{{OmadaInstanceURL}}"
-					],
-					"path": [
-						"OData",
-						"BuiltIn",
-						"CalculatedAssignments"
-					],
-					"query": [
-						{
-							"key": "$filter",
-							"value": "Identity/Id eq 1000009159"
-						},
-						{
-							"key": "$select",
-							"value": "AssignmentKey"
-						},
-						{
-							"key": "$expand",
-							"value": "Identity,Resource,ResourceType"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Get Bearer Token",
 			"id": "5100205a-17e2-42ff-9a75-756487e6d1a5",
 			"protocolProfileBehavior": {
@@ -936,342 +1221,6 @@
 					]
 				},
 				"url": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Identity Calculation Log - WORKS",
-			"id": "8ec73fce-d59e-429e-b92d-ecb6f4d257c9",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "impersonate_user",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query MyQuery {\r\n  logs {\r\n    identityCalculation(identityId: \"7ac8b482-272f-4bf0-9339-ce3742c2b4ca\")\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Resource Owner Approvals",
-			"id": "b854a3d7-2090-41cb-aa93-4644865cf3f8",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IkhTMjNiN0RvN1RjYVUxUm9MSHdwSXEyNFZZZyJ9.eyJhdWQiOiIwOGVlYjZhNC00YWVlLTQwNmYtYmFhNS00OTIyOTkzZjA5ZjMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiL3YyLjAiLCJpYXQiOjE3NTk4NjYxMTAsIm5iZiI6MTc1OTg2NjExMCwiZXhwIjoxNzU5ODcxNTA1LCJhaW8iOiJBVlFBcS84YUFBQUE3SU5DaXY3S3oxQkdGV25GTnMwbUlyQ2tvVnUwODVJT0hJSmFiQUtyMkYrZ3V6a2ptUVlPS2FHVUkrb1NieSswTkhrZlZ3NUZrUTluV1pPaGZvRHkxSVlLSFg5d3pJRXlqalB6c0QvNTVLTT0iLCJhenAiOiI3NGQwMWE1Yi1kMzRhLTQwZGMtYjI2MS1hZjJkNTNlYWIzMTUiLCJhenBhY3IiOiIwIiwibmFtZSI6Ikhhbm5hIFVscmljaCIsIm9pZCI6IjE5ZDQ3ZjEwLTc5ZDctNDFjNy04MWY3LTE5ODcwOGE4ODBlNiIsInByZWZlcnJlZF91c2VybmFtZSI6IkhBTlVMUkA1NG12NGMub25taWNyb3NvZnQuY29tIiwicmgiOiIxLkFVNEE2NVVqVk4tMkYwYXZOUkhldGxuZmU2UzI3Z2p1U205QXVxVkpJcGtfQ2ZNV0FSbE9BQS4iLCJzY3AiOiJBUEkiLCJzaWQiOiIwMDk5ODhjOS0yMjU4LWJlOTktOTNjNi00NjFhYTZjNTM5NTkiLCJzdWIiOiJfRHRuWkw3X0V4NTFHOVJWLVhjbDlockFGY2x2TV8zZGs4UGxlem54V1hjIiwidGlkIjoiNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiIiwidXRpIjoiVW5jalc3Tkg1VUdCU0xjR2hIMGlBQSIsInZlciI6IjIuMCIsInhtc19mdGQiOiJSZlVXT2lIcHRXRzhsUXVNakVVTUplblFVVHZUaVEwNE92b0JreTVMdVVnQlpuSmhibU5sWXkxa2MyMXoifQ.fZjucRRDb6KqElLEpAvg3PY9O2sXjTEJ4LaV6uStw7dNHE-SoGEWpRhKLHLbiapJyKQSKlfHTjIYf_-jkCv1V927m1Ya9tpuKyP5jh9HATO1JFQxkfrBDu4VtAt-WUGHJOv-oeylHWlmkuYAxQPCfu0qZ3vsrUcNckobtqhAhzHcF5GucNkgufD2_TSTI3ibL8B_D5PM9nvu2tI90IixYS31g2UX3bXy2aNnU3BEgyE9Tv5W2cKFQvQ8ItUxxEVQQBrB3KwWzO1q92Qfp2MbN1ES8JX9mnEVdBYcu1tr461ZVrwxDyA9_JLe78dpieAGHEZo7K5ysSlHCQwwBs8LtA"
-					}
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "impersonate_user",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query getResourceOwnerApprovals {\r\n  accessRequestApprovalSurveyQuestions(\r\n    filters: {workflowStep: {filterValue: \"ResourceOwnerApproval\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      reason\r\n      surveyId\r\n      surveyObjectKey\r\n      workflowStep\r\n      context {\r\n        displayName\r\n        type\r\n        id\r\n      }\r\n    }\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Manager Approvals",
-			"id": "060809b5-fe35-4876-940e-5ab7b718b77e",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "impersonate_user",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query getManagerApprovals {\r\n  accessRequestApprovalSurveyQuestions(\r\n    filters: {workflowStep: {filterValue: \"ManagerApproval\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      reason\r\n      surveyId\r\n      surveyObjectKey\r\n      workflowStep\r\n      context {\r\n        displayName\r\n        type\r\n        id\r\n      }\r\n    }\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get SoD",
-			"id": "fca694cd-06f6-4451-820b-2316b96f3895",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "impersonate_user",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Access Requests Detailed",
-			"id": "e8fe3025-cdce-41a3-9e5b-cc03c44c5a83",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "impersonate_user",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Resources With Filter (Not Approved, AD Security Groups)",
-			"id": "236fed19-b325-4887-8cd1-bf4614f43072",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "impersonate_user",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query MyQuery {\r\n  calculatedAssignments(\r\n    filters: {identityName: {filterValue: \"BERRY\", operator: CONTAINS}, resourceTypeName: {filterValue: \"Active Directory - Security Group\", operator: CONTAINS}, complianceStatus: {filterValue: \"NOT APPROVED\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      id\r\n      complianceStatus\r\n      disabled\r\n      validFrom\r\n      validTo\r\n      violations {\r\n        description\r\n        violationStatus\r\n      }\r\n      account {\r\n        accountName\r\n        accountType {\r\n          name\r\n          id\r\n        }\r\n        system {\r\n          name\r\n          id\r\n        }\r\n      }\r\n      identity {\r\n        identityId\r\n        lastName\r\n        firstName\r\n        id\r\n        accounts {\r\n          accountName\r\n          system {\r\n            name\r\n            id\r\n          }\r\n        }\r\n      }\r\n      resource {\r\n        name\r\n        id\r\n        description\r\n        system {\r\n          id\r\n          name\r\n        }\r\n        resourceType {\r\n          id\r\n          name\r\n        }\r\n      }\r\n      reason {\r\n        description\r\n        reasonType\r\n        causeObjectKey\r\n      }\r\n    }\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Compliance Workbench Data",
-			"id": "6db3a748-0719-4458-a0ea-ed9a5ff2b6c2",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Impersonate_User",
-						"value": "HANULR@54MV4C.ONMICROSOFT.COM",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query MyQuery {\r\n  complianceWorkbenchData(\r\n    filters: {isApplicationAccountsSystemVisible: false, showAccounts: true}\r\n  ) {\r\n    system {\r\n      systemCategory {\r\n        id\r\n      }\r\n      name\r\n    }\r\n    complianceStatus {\r\n      explicitlyApproved\r\n      implicitlyApproved\r\n      implicitlyAssigned\r\n      notApproved\r\n      inViolation\r\n    }\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Compliance Workbench Data Copy",
-			"id": "ca858bdb-aaeb-4357-84c9-51adbb25ca75",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Impersonate_User",
-						"value": "HANULR@54MV4C.ONMICROSOFT.COM",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "query MyQuery {\r\n  complianceWorkbenchData(\r\n    filters: {isApplicationAccountsSystemVisible: false, showAccounts: true}\r\n  ) {\r\n    system {\r\n      systemCategory {\r\n        id\r\n      }\r\n      name\r\n    }\r\n    complianceStatus {\r\n      explicitlyApproved\r\n      implicitlyApproved\r\n      implicitlyAssigned\r\n      notApproved\r\n      inViolation\r\n    }\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Resources Systems Contexts for Identity",
-			"id": "9dc95867-71f7-4e56-bdf5-aadac2f9f7db",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlhSdmtvOFA3QTNVYVdTblU3Yk05blQwTWpoQSJ9.eyJhdWQiOiIzOWNiNjIxOC0xNTU5LTRkNzctYmNiZi0wZDA5NzVhMGZkZWMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZWM2ZDFjNjItYjJkOC00MGY5LWFlMzgtMjczNWMyYmQ1OTI1L3YyLjAiLCJpYXQiOjE3MTA3ODQ0MzcsIm5iZiI6MTcxMDc4NDQzNywiZXhwIjoxNzEwNzg4MzM3LCJhaW8iOiJBU1FBMi84V0FBQUFWejVrbWpNd2RCQ245K0pPbG95c3pHWTk2alNwbCt4clBKaS9ETHE4eGdFPSIsImF6cCI6IjQwN2U3M2Q1LWVkYzUtNDhlNS05NzFmLTdlZjRiYWMzZjk0NCIsImF6cGFjciI6IjEiLCJvaWQiOiIxNDE4OWQ1Ni00YmMxLTQ1NmMtYjI5Mi0wMjMwMjcxODY5ZTkiLCJyaCI6IjAuQVJBQVloeHQ3Tml5LVVDdU9DYzF3cjFaSlJoaXl6bFpGWGROdkw4TkNYV2dfZXdRQUFBLiIsInN1YiI6IjE0MTg5ZDU2LTRiYzEtNDU2Yy1iMjkyLTAyMzAyNzE4NjllOSIsInRpZCI6ImVjNmQxYzYyLWIyZDgtNDBmOS1hZTM4LTI3MzVjMmJkNTkyNSIsInV0aSI6Im9YYm5CVFZpX0VLWjdSeS1aeFFaQUEiLCJ2ZXIiOiIyLjAifQ.GlcvDI3hqBP6wgXBalmlUyAJZC0tLQCzEgQWTnyKma9mOX4Lx8cV7jQoIkkoc-y8RfkyDJThRVI6cJ693UIsXRW6Vrc0GTCJ8KAMA6WAPbIHshlFRo53EpUz44MgYurvKsv5uBc3NfsmowSPO28AJMiiUhpmS0tE0LOI_YAelvYi2Jzln9ZPiB4pNOs66_06yxLfmj5h2XzuujzVfgAZmdcBkebm9xMxXNWzrepNHxntrLp8CIRz2Vs7FP4p1O7WWCZRk_abXAbxfPXbXC1ooal0nV-ZJLKTvNkv77FHsA_SKUQfeWjQvBlp5EBCgDDdsbsg8YuWNGtb2geHzxn2jA"
-					}
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Impersonate-User",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\"query\":\"query accessRequest {accessRequest {contexts(identityIds:[\\\"e3e869c4-369a-476e-a969-d57059d0b1e4\\\"]) {id name}reasons {id name} systems(filter:\\\"\\\", sortColumn: \\\"name\\\", sortOrder: ASC) {id name}}}\",\"variables\":{}}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Create access request Test",
-			"id": "2b6a641b-e851-4c94-86b7-3259f5eebb25",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Impersonate-User",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "mutation MyMutation {\r\n  createAccessRequest(\r\n    accessRequest: {reason: \"Rozi told me to do it\", identities: {id: \"5da7f8fc-0119-46b0-a6b4-06e5c78edf68\"}, \r\nresources: {id: \"fa58b111-7e91-4723-b998-2df8c0758568\"}, context: \"227266b8-4810-4ba5-98f2-a974e181adcf\"}\r\n  ) {\r\n    id\r\n    status {\r\n      approvalStatus\r\n      requestAssignmentState\r\n    }\r\n    resource {\r\n      name\r\n      id\r\n      system {\r\n        name\r\n        id\r\n      }\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
-						"variables": ""
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Resources for System",
-			"id": "b654cba5-94f5-46ca-af15-6c3d3f5460f2",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlhSdmtvOFA3QTNVYVdTblU3Yk05blQwTWpoQSJ9.eyJhdWQiOiIzOWNiNjIxOC0xNTU5LTRkNzctYmNiZi0wZDA5NzVhMGZkZWMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZWM2ZDFjNjItYjJkOC00MGY5LWFlMzgtMjczNWMyYmQ1OTI1L3YyLjAiLCJpYXQiOjE3MTA3NjA2MjYsIm5iZiI6MTcxMDc2MDYyNiwiZXhwIjoxNzEwNzY0NTI2LCJhaW8iOiJBU1FBMi84V0FBQUFPdmlJMDVQbmI0RFY4Mkd2RUhBY2xCWXRMN091bVhCdGxVUE9EZzVWNlpjPSIsImF6cCI6IjQwN2U3M2Q1LWVkYzUtNDhlNS05NzFmLTdlZjRiYWMzZjk0NCIsImF6cGFjciI6IjEiLCJvaWQiOiIxNDE4OWQ1Ni00YmMxLTQ1NmMtYjI5Mi0wMjMwMjcxODY5ZTkiLCJyaCI6IjAuQVJBQVloeHQ3Tml5LVVDdU9DYzF3cjFaSlJoaXl6bFpGWGROdkw4TkNYV2dfZXdRQUFBLiIsInN1YiI6IjE0MTg5ZDU2LTRiYzEtNDU2Yy1iMjkyLTAyMzAyNzE4NjllOSIsInRpZCI6ImVjNmQxYzYyLWIyZDgtNDBmOS1hZTM4LTI3MzVjMmJkNTkyNSIsInV0aSI6Ijl1MVh5TnYxZEUyM0FRcjk3R29MQUEiLCJ2ZXIiOiIyLjAifQ.du3gyv69huLlOEpJhSYjFLSuxMosSfPp_C0L-LpM1i8uJ8uW3VstKvYgBjJwDmdUJ9a6zdaRUFzgDIVqnJwTyXiu1b0ImOodkx_WcZXTVCJqqJv_R9RrTY4QIjUcewfnAIgsfextNyg6utvWRy5lPTgI6Ba_0iz61dIei7rMVTaSy_qekzSWnx8NB3OVx_5VSPuemZq9KOCLs0HVGOiK-rjMgLYmq-D4kuUlsS7ciLuYBYwhJfXPva8y_UaCY-QI-4lmJyobkBy6_J5bWvrGCU8aaCv9WF2zxpiVBLhDx4eExq3JCym_E3P0SM9OJDoLbnn_k8xHfaf7HuZUl3FQng"
-					}
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Impersonate-User",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest {resources(systemId: \\\"1f18d52c-9212-4754-b15f-afd5951ea713\\\", sortColumn: \\\"popularity\\\", sortOrder: ASC, includeThirdPartyExcludedResources: false, contextId: \\\"d152e0e1-5bdf-4c8f-88ea-404ee2cdc370\\\",rows:{{RetrieveMaxNumberOfResources}}, searchFilter:\\\"\\\") {id name description } }}\",\"variables\":{}}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
-			},
-			"response": []
-		},
-		{
-			"name": "[GraphQL] Get Resource Description",
-			"id": "cba8fb16-e9e5-4496-97b2-c223ce21362f",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Impersonate-User",
-						"value": "{{ImpersonateUser}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest { resources(filter: \\\"Account Operators\\\")  { description id }}}\",\"variables\":{}}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
 			},
 			"response": []
 		},
