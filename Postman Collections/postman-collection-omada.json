@@ -1440,9 +1440,19 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"@odata.context\": \"http://enterpriseserver/OData/DataObjects/$metadata#Resource/$entity\",\r\n    \"@odata.etag\": \"W/\\\"MTA0MTMxNw==\\\"\",\r\n    \"Id\": 1024341,\r\n    \"UId\": \"ef105307-e61b-4808-8d94-88e2437997a5\",\r\n    \"CreateTime\": \"2024-02-05T18:29:19.02991Z\",\r\n    \"ChangeTime\": \"2024-02-05T18:36:45.8660713Z\",\r\n    \"DisplayName\": \"ODATA Test\",\r\n    \"Deleted\": false,\r\n    \"DeleteTime\": \"0001-01-01T00:00:00Z\",\r\n    \"CurrentVersionId\": 1041317,\r\n    \"NAME\": \"ODATA Test\",\r\n    \"DESCRIPTION\": \"\",\r\n    \"ROLEID\": \"ODATA TESTROLE\",\r\n    \"VALIDFROM\": null,\r\n    \"VALIDTO\": null,\r\n    \"SKIPPROVISIONING\": false,\r\n    \"ODWBUSIKEY\": \"\",\r\n    \"ODWLOGICKEY\": \"\",\r\n    \"RISKSCORE\": null,\r\n    \"OBJECTGUID\": \"\",\r\n    \"ADDREQUESTINFOATTRS\": \"\",\r\n    \"ROLELASTCERTIFIEDDATE\": null,\r\n    \"ROLECERTIFICATIONLOG\": \"\",\r\n    \"DISABCONDINHERIT\": true,\r\n    \"PREVENTSELFSVCTHIRDPARTY\": false,\r\n    \"ATY_NAMEFORMAT\": \"\",\r\n    \"SYSTEMREF\": {\r\n        \"Id\": 1011066,\r\n        \"UId\": \"f23e3e04-a8e0-47e0-8716-6fe3ec8d1c1f\",\r\n        \"KeyValue\": null,\r\n        \"KeyProperty\": null,\r\n        \"DisplayName\": \"Document Management\"\r\n    },\r\n    \"ATTRIBVALUES\": [],\r\n    \"ROLECATEGORY\": {\r\n        \"Id\": 500,\r\n        \"UId\": \"2802e876-cc4b-42cf-958f-559963820fae\",\r\n        \"Value\": \"Role\"\r\n    },\r\n    \"CHILDROLES\": [\r\n        {\r\n            \"Id\": 1022492,\r\n            \"UId\": \"a5ba0e0b-659b-44bb-aaa5-4de4b2335248\",\r\n            \"KeyValue\": null,\r\n            \"KeyProperty\": null,\r\n            \"DisplayName\": \"All in Denmark - GBG\"\r\n        },\r\n        {\r\n            \"Id\": 1022508,\r\n            \"UId\": \"5a761697-0d26-49fb-bb4a-e784adac0755\",\r\n            \"KeyValue\": null,\r\n            \"KeyProperty\": null,\r\n            \"DisplayName\": \"All in Germany - GBG\"\r\n        }\r\n    ],\r\n    \"ROLETYPEREF\": {\r\n        \"Id\": 1011046,\r\n        \"UId\": \"0b8f8867-6b65-4661-96c4-dda3539b4554\",\r\n        \"KeyValue\": null,\r\n        \"KeyProperty\": null,\r\n        \"DisplayName\": \"Application Role\"\r\n    },\r\n    \"ROLEFOLDER\": {\r\n        \"Id\": 1011050,\r\n        \"UId\": \"9df88671-4e7e-4f7a-ba7d-0df66cddb122\",\r\n        \"KeyValue\": null,\r\n        \"KeyProperty\": null,\r\n        \"DisplayName\": \"Document Management\"\r\n    },\r\n    \"OWNERREF\": [],\r\n    \"ACCOUNTTYPE\": [],\r\n    \"EXPLICITOWNER\": [],\r\n    \"RESOURCESTATUS\": {\r\n        \"Id\": 1011,\r\n        \"UId\": \"2cebbf25-b2b9-4922-b539-02f3c764c0fc\",\r\n        \"Value\": \"Active\"\r\n    },\r\n    \"PROVDEPENDSON\": null,\r\n    \"PREVENTSELFSVC\": null,\r\n    \"CLT_TAGS\": [],\r\n    \"RISKLEVEL\": null,\r\n    \"MANUALOWNER\": [],\r\n    \"BUSINESSPROCMVREF\": [],\r\n    \"POLICYRISKCHECK\": [],\r\n    \"C_RESOURCE_CONTEXTS\": [],\r\n    \"JOBTITLE_REF\": null,\r\n    \"PASSWORDPOLICY\": null\r\n}"
+						},
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resource(1024341)"
 					},
 					"response": []
 				},
