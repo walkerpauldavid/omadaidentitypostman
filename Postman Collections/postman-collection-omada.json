@@ -1,0 +1,2009 @@
+{
+	"info": {
+		"_postman_id": "339cede1-8beb-4c21-bd8d-7da575453419",
+		"name": "omada.cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Identity",
+			"item": [
+				{
+					"name": "[OData] Query Identity by name attribute",
+					"id": "63474771-ad14-4ee0-ae24-a6214ea27594",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Query Context by id",
+					"id": "728251a7-0f6a-42aa-8ef5-1ed9ee9124f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=UId eq f847738e-a96f-4ddc-ba0c-e1dd408ff469",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "UId eq f847738e-a96f-4ddc-ba0c-e1dd408ff469"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Query Identity No filter",
+					"id": "5d977e0d-3047-47d1-b779-09196ef6c6f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Query Identity By OU Id",
+					"id": "cf9096e1-66e8-464d-9487-590b9db233ad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=OUREF/Id eq 1003855",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "OUREF/Id eq 1003855"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Query Identity Count Using Name Filter",
+					"id": "c3eaca33-8bbb-44a0-bd34-617d3876550e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Query Identity Count Using Filter Copy",
+					"id": "630efe4d-6d6a-4ffa-bb3f-dc15ffb98bb6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Query Identity By Id",
+					"id": "7ad9801e-584b-4230-80f2-dd61e808fe75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Count Identities No Filter",
+					"id": "d52425d2-ae73-4372-a260-891f3d647a8e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Count Identities Using OUREF Id",
+					"id": "5be49ff5-4a92-4d4c-aa7a-0d5ca09056da",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$count=true&$top=0&$filter=OUREF/Id eq 1003855",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$count",
+									"value": "true"
+								},
+								{
+									"key": "$top",
+									"value": "0"
+								},
+								{
+									"key": "$filter",
+									"value": "OUREF/Id eq 1003855"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Count Identities Using OUREF Uid",
+					"id": "8d7f10e0-7590-425c-a23e-981b41609dba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$count=true&$top=0&$filter=OUREF/UId eq 227266b8-4810-4ba5-98f2-a974e181adcf",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$count",
+									"value": "true"
+								},
+								{
+									"key": "$top",
+									"value": "0"
+								},
+								{
+									"key": "$filter",
+									"value": "OUREF/UId eq 227266b8-4810-4ba5-98f2-a974e181adcf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Count Identities Using IdentityCategory Id",
+					"id": "92c03060-f030-4052-876b-91423d33c0f7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$count=true&$top=0&$filter=OUREF/UId eq 227266b8-4810-4ba5-98f2-a974e181adcf",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$count",
+									"value": "true"
+								},
+								{
+									"key": "$top",
+									"value": "0"
+								},
+								{
+									"key": "$filter",
+									"value": "OUREF/UId eq 227266b8-4810-4ba5-98f2-a974e181adcf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Count Identities Using IdentityCategory Uid",
+					"id": "7459867f-98b1-41f6-bb93-febd8eced977",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$count=true&$top=0&$filter=IDENTITYCATEGORY/Uid eq 270a1807-95ca-40b4-9ce5-475d8961f31b",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$count",
+									"value": "true"
+								},
+								{
+									"key": "$top",
+									"value": "0"
+								},
+								{
+									"key": "$filter",
+									"value": "IDENTITYCATEGORY/Uid eq 270a1807-95ca-40b4-9ce5-475d8961f31b"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Count Identities Using IdentityCategory Value",
+					"id": "e06ff9c5-3f19-4403-994d-db41c708bc64",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$count=true&$top=0&$filter=OUREF/UId eq 227266b8-4810-4ba5-98f2-a974e181adcf",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$count",
+									"value": "true"
+								},
+								{
+									"key": "$top",
+									"value": "0"
+								},
+								{
+									"key": "$filter",
+									"value": "OUREF/UId eq 227266b8-4810-4ba5-98f2-a974e181adcf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Update User",
+					"id": "011fab9c-6355-45fd-9f64-7300392470df",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6InEtMjNmYWxldlpoaEQzaG05Q1Fia1A1TVF5VSJ9.eyJhdWQiOiIzOWNiNjIxOC0xNTU5LTRkNzctYmNiZi0wZDA5NzVhMGZkZWMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZWM2ZDFjNjItYjJkOC00MGY5LWFlMzgtMjczNWMyYmQ1OTI1L3YyLjAiLCJpYXQiOjE3MTM4ODI0NjcsIm5iZiI6MTcxMzg4MjQ2NywiZXhwIjoxNzEzODg2MzY3LCJhaW8iOiJBU1FBMi84V0FBQUFpc1VJbU5pUWUvSW5WTmNOUUFqOFdTaDZMTXpkNThBbkg4VzJEOC9YNlVBPSIsImF6cCI6IjQwN2U3M2Q1LWVkYzUtNDhlNS05NzFmLTdlZjRiYWMzZjk0NCIsImF6cGFjciI6IjEiLCJvaWQiOiIxNDE4OWQ1Ni00YmMxLTQ1NmMtYjI5Mi0wMjMwMjcxODY5ZTkiLCJyaCI6IjAuQVJBQVloeHQ3Tml5LVVDdU9DYzF3cjFaSlJoaXl6bFpGWGROdkw4TkNYV2dfZXdRQUFBLiIsInN1YiI6IjE0MTg5ZDU2LTRiYzEtNDU2Yy1iMjkyLTAyMzAyNzE4NjllOSIsInRpZCI6ImVjNmQxYzYyLWIyZDgtNDBmOS1hZTM4LTI3MzVjMmJkNTkyNSIsInV0aSI6InNFc2JlNmVQcDA2UzNlT0hpdk4wQUEiLCJ2ZXIiOiIyLjAifQ.zoM68s_vqXkqNWror4dVWhuBVeJeH1xltxiGZtm47BDONeObY1hmmH1hFC7kSZkoyMBU1HQifZUEgS05JHWAOfyPL3qtxVZ6m949d-0OmHYYe6AJX8F2Z2uP3HpqF9zf-OD8qoKHddKK52TralGioNTB2XqcldUCgMnhL2SlZn4yjBt2fNRg8ohsAkWosE1ggU0litCXXXbHMVckxGIcB3lm0MgB6cqWShe3pfOenjmVKZ7JCYLjsXLJemv2xSc63MHn0CQ1zpQVReRtHUd1PM9KVUma5art6vwE3sgkjlRcdxVM7w7waBCMgEvEAWWI6doYCCqAgxbn8NH-lWnh7A"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"@odata.context\": \"https://pawa-poc1.omada.cloud/OData/DataObjects/$metadata#User\",\r\n    \"value\": [\r\n        {\r\n            \"@odata.etag\": \"W/\\\"MTA0MDYxNA==\\\"\",\r\n            \"Id\": 1023896,\r\n            \"UId\": \"7f15e93b-2a77-45f1-b8c5-7b181526eb8a\",\r\n            \"CreateTime\": \"2024-04-22T13:25:10.2064262Z\",\r\n            \"ChangeTime\": \"2024-04-23T14:10:41.7336401Z\",\r\n            \"DisplayName\": \"Primary Environment Administrator\",\r\n            \"Deleted\": false,\r\n            \"DeleteTime\": \"0001-01-01T00:00:00Z\",\r\n            \"CurrentVersionId\": 1040614,\r\n            \"UserName\": \"pauladmin@igademolab.onmicrosoft.com\",\r\n            \"Inactive\": true,\r\n            \"Culture\": \"en-US\",\r\n            \"LangId\": 1000,\r\n            \"TimeZoneId\": 105,\r\n            \"WorkWeekId\": 900,\r\n            \"FIRSTNAME\": \"Primary Environment\",\r\n            \"LASTNAME\": \"Administrator\",\r\n            \"JOBTITLE\": \"\",\r\n            \"ADDRESS1\": \"\",\r\n            \"ADDRESS2\": \"\",\r\n            \"ZIPCODE\": \"\",\r\n            \"CITY\": \"\",\r\n            \"PHONE\": \"\",\r\n            \"CELLPHONE\": \"\",\r\n            \"EMAIL\": \"pauladmin@onmicrosoft.igademolab.com\",\r\n            \"OBJECTGUID\": \"\",\r\n            \"ODWBUSIKEY\": \"\",\r\n            \"IDENTITYREF\": null,\r\n            \"DASHBOARDREF\": null\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] New Identity",
+					"id": "1c3ea908-6779-493f-8c16-55083fc32e0e",
+					"protocolProfileBehavior": {
+						"strictSSL": true,
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "oisauthtoken",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "SAMLNameID",
+								"value": "patrick.kelley@omadaidentity.com",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "OISaaS_WS_gw3793",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "oissamlrequestid",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IDENTITYID\": \"XXLB00101\",\r\n    \"FIRSTNAME\": \"Lea\",\r\n    \"LASTNAME\": \"Black\",\r\n    \"JOBTITLE\": \"Assistant\",\r\n    \"VALIDFROM\": \"2016-01-01T01:00:00+01:00\",\r\n    \"VALIDTO\": \"9999-12-31T01:00:00+01:00\",\r\n    \"IDENTITYSTATUS\": {\r\n        \"UId\": \"a4ed4124-9b94-43a0-92c0-e71fba733049\"\r\n    },\r\n    \"IDENTITYCATEGORY\": {\r\n        \"Id\": \"561\"\r\n    },\r\n    \"IDENTITYTYPE\": {\r\n        \"UId\": \"d13624f9-905d-4bc5-a6cc-2a4589c26be4\"\r\n    }\r\n}"
+						},
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Identity"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Access Requests",
+					"id": "98384d12-b5b7-4241-b3e1-e6fdb19b6cab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlBjWDk4R1g0MjBUMVg2c0JEa3poUW1xZ3dNVSJ9.eyJhdWQiOiIwOGVlYjZhNC00YWVlLTQwNmYtYmFhNS00OTIyOTkzZjA5ZjMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiL3YyLjAiLCJpYXQiOjE3Njg0MDc4MzgsIm5iZiI6MTc2ODQwNzgzOCwiZXhwIjoxNzY4NDEyMjc2LCJhaW8iOiJBVlFBcS84YkFBQUFGamk0d0NQaTI2OFFkYTJ5QXJDZys5VnVNQkFCbi9id0tpd2RENUVyRUpXbGhpR2lJbHJYeFFCRWNpZEhMTTlWV1B2dkltbjRSbUhCSzJhVFo2bDM5VVp2NW1YYTRBMUllLy9RMllkODJJST0iLCJhenAiOiI3NGQwMWE1Yi1kMzRhLTQwZGMtYjI2MS1hZjJkNTNlYWIzMTUiLCJhenBhY3IiOiIwIiwibmFtZSI6Ikhhbm5hIFVscmljaCIsIm9pZCI6IjE5ZDQ3ZjEwLTc5ZDctNDFjNy04MWY3LTE5ODcwOGE4ODBlNiIsInByZWZlcnJlZF91c2VybmFtZSI6IkhBTlVMUkA1NG12NGMub25taWNyb3NvZnQuY29tIiwicmgiOiIxLkFVNEE2NVVqVk4tMkYwYXZOUkhldGxuZmU2UzI3Z2p1U205QXVxVkpJcGtfQ2ZNV0FSbE9BQS4iLCJzY3AiOiJBUEkiLCJzaWQiOiIwMGE4N2NlOS1iNDYyLTgyNTMtOTkzOC04ZjA5MzJlY2U2NmIiLCJzdWIiOiJfRHRuWkw3X0V4NTFHOVJWLVhjbDlockFGY2x2TV8zZGs4UGxlem54V1hjIiwidGlkIjoiNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiIiwidXRpIjoibTl3el9mU1N4RXl4VlJobnFBVXNBQSIsInZlciI6IjIuMCIsInhtc19mdGQiOiJ4M2d6MUx5MmhMTFhaX1JnQVRyUjFLX1ZQeG9oRmhLa2hHcFdjZ29BRzFFQlpYVnliM0JsYm05eWRHZ3RaSE50Y3cifQ.JinW2_m0JD3Bqa25o7sZEXC1Z0EFxi1zx7lEj_xP0kQla1b3HHCR25IV09LZx1x9dBUypz6KWbBPxJLCkwXbJIqwOQ2yEgPDSEH4uACV1U1s24MZQNwVcF4sU1rPRHl21EwVzP-gZmnf5Riq3vF8FQDLzB67JhB4GH2wEcd5iNpznppspzxdDteZVv8V7uKjnxeuxOm2urk5-z_z70MvSzki5n3VS8LvYZPF2T5tV2hlS8pgPW_PLPqEpqluf55kO4PUJJ_DCnDzqnGQ4wf1dhljkKJghKTX5DGLBQ93bCuvJpZwqQ7KmgSQkWavS4l-09yKKAzQ80dwf4GCZ-f_gg"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Identity Calculation Log",
+					"id": "8ec73fce-d59e-429e-b92d-ecb6f4d257c9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  logs {\r\n    identityCalculation(identityId: \"7ac8b482-272f-4bf0-9339-ce3742c2b4ca\")\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resources Systems Contexts for Identity",
+					"id": "9dc95867-71f7-4e56-bdf5-aadac2f9f7db",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {accessRequest {contexts(identityIds:[\\\"e3e869c4-369a-476e-a969-d57059d0b1e4\\\"]) {id name}reasons {id name} systems(filter:\\\"\\\", sortColumn: \\\"name\\\", sortOrder: ASC) {id name}}}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
+					},
+					"response": []
+				}
+			],
+			"id": "fc91ebb3-6915-4e3a-a6c3-7d69da96a03a"
+		},
+		{
+			"name": "ContextAssignment",
+			"item": [
+				{
+					"name": "[OData] Query Identity by name attribute Copy",
+					"id": "5d6e4b34-589c-43ac-b9cd-aebccf454c5c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "c4b39469-0723-48f4-9581-5204a1655afd"
+		},
+		{
+			"name": "Omada User",
+			"item": [],
+			"id": "c635366e-7a6b-4bce-b231-1b634b9dbb9e"
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "[OData] Create new role",
+					"id": "2d909a1d-a6bb-461b-a8c1-0c47ed19f311",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"ROLEID\": \"Odata Testrole\", \r\n\"NAME\": \"ODATA Test\",\r\n\"SYSTEMREF\": { \"UId\": \"f23e3e04-a8e0-47e0-8716-6fe3ec8d1c1f\" }, \r\n\"ROLECATEGORY\": { \"Id\": 500 },\r\n\"CHILDROLES\": [{ \"UId\": \"a5ba0e0b-659b-44bb-aaa5-4de4b2335248\" },{ \"UId\": \"5a761697-0d26-49fb-bb4a-e784adac0755\" }], \r\n\"RESOURCESTATUS\": { \"Id\": 1011 },\r\n\"ROLETYPEREF\": { \"UId\": \"0b8f8867-6b65-4661-96c4-dda3539b4554\" }, \r\n\"ROLEFOLDER\": { \"UId\": \"9df88671-4e7e-4f7a-ba7d-0df66cddb122\" }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resource"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Role",
+					"id": "168b1182-61bd-48dc-9d46-ffcc72c61b86",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resource(1024341)"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Revert a role",
+					"id": "528efa50-22c5-48db-8d45-393e9bccc93b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"@odata.context\": \"http://enterpriseserver/OData/DataObjects/$metadata#Resource/$entity\",\r\n    \"@odata.etag\": \"W/\\\"MTA0MTMxNw==\\\"\",\r\n    \"Id\": 1024341,\r\n    \"UId\": \"ef105307-e61b-4808-8d94-88e2437997a5\",\r\n    \"CreateTime\": \"2024-02-05T18:29:19.02991Z\",\r\n    \"ChangeTime\": \"2024-02-05T18:36:45.8660713Z\",\r\n    \"DisplayName\": \"ODATA Test\",\r\n    \"Deleted\": false,\r\n    \"DeleteTime\": \"0001-01-01T00:00:00Z\",\r\n    \"CurrentVersionId\": 1041317,\r\n    \"NAME\": \"ODATA Test\",\r\n    \"DESCRIPTION\": \"\",\r\n    \"ROLEID\": \"ODATA TESTROLE\",\r\n    \"VALIDFROM\": null,\r\n    \"VALIDTO\": null,\r\n    \"SKIPPROVISIONING\": false,\r\n    \"ODWBUSIKEY\": \"\",\r\n    \"ODWLOGICKEY\": \"\",\r\n    \"RISKSCORE\": null,\r\n    \"OBJECTGUID\": \"\",\r\n    \"ADDREQUESTINFOATTRS\": \"\",\r\n    \"ROLELASTCERTIFIEDDATE\": null,\r\n    \"ROLECERTIFICATIONLOG\": \"\",\r\n    \"DISABCONDINHERIT\": true,\r\n    \"PREVENTSELFSVCTHIRDPARTY\": false,\r\n    \"ATY_NAMEFORMAT\": \"\",\r\n    \"SYSTEMREF\": {\r\n        \"Id\": 1011066,\r\n        \"UId\": \"f23e3e04-a8e0-47e0-8716-6fe3ec8d1c1f\",\r\n        \"KeyValue\": null,\r\n        \"KeyProperty\": null,\r\n        \"DisplayName\": \"Document Management\"\r\n    },\r\n    \"ATTRIBVALUES\": [],\r\n    \"ROLECATEGORY\": {\r\n        \"Id\": 500,\r\n        \"UId\": \"2802e876-cc4b-42cf-958f-559963820fae\",\r\n        \"Value\": \"Role\"\r\n    },\r\n    \"CHILDROLES\": [\r\n        {\r\n            \"Id\": 1022492,\r\n            \"UId\": \"a5ba0e0b-659b-44bb-aaa5-4de4b2335248\",\r\n            \"KeyValue\": null,\r\n            \"KeyProperty\": null,\r\n            \"DisplayName\": \"All in Denmark - GBG\"\r\n        },\r\n        {\r\n            \"Id\": 1022508,\r\n            \"UId\": \"5a761697-0d26-49fb-bb4a-e784adac0755\",\r\n            \"KeyValue\": null,\r\n            \"KeyProperty\": null,\r\n            \"DisplayName\": \"All in Germany - GBG\"\r\n        }\r\n    ],\r\n    \"ROLETYPEREF\": {\r\n        \"Id\": 1011046,\r\n        \"UId\": \"0b8f8867-6b65-4661-96c4-dda3539b4554\",\r\n        \"KeyValue\": null,\r\n        \"KeyProperty\": null,\r\n        \"DisplayName\": \"Application Role\"\r\n    },\r\n    \"ROLEFOLDER\": {\r\n        \"Id\": 1011050,\r\n        \"UId\": \"9df88671-4e7e-4f7a-ba7d-0df66cddb122\",\r\n        \"KeyValue\": null,\r\n        \"KeyProperty\": null,\r\n        \"DisplayName\": \"Document Management\"\r\n    },\r\n    \"OWNERREF\": [],\r\n    \"ACCOUNTTYPE\": [],\r\n    \"EXPLICITOWNER\": [],\r\n    \"RESOURCESTATUS\": {\r\n        \"Id\": 1011,\r\n        \"UId\": \"2cebbf25-b2b9-4922-b539-02f3c764c0fc\",\r\n        \"Value\": \"Active\"\r\n    },\r\n    \"PROVDEPENDSON\": null,\r\n    \"PREVENTSELFSVC\": null,\r\n    \"CLT_TAGS\": [],\r\n    \"RISKLEVEL\": null,\r\n    \"MANUALOWNER\": [],\r\n    \"BUSINESSPROCMVREF\": [],\r\n    \"POLICYRISKCHECK\": [],\r\n    \"C_RESOURCE_CONTEXTS\": [],\r\n    \"JOBTITLE_REF\": null,\r\n    \"PASSWORDPOLICY\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resource(1024341)"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve All Application Roles",
+					"id": "d80d8448-0ef1-4410-8203-f457793fc959",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Resource?$filter=Systemref/Id eq 1011066",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Resource"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "Systemref/Id eq 1011066"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "72a12498-d083-4132-9f5a-0cf394a057b8"
+		},
+		{
+			"name": "OrgUnit",
+			"item": [
+				{
+					"name": "[OData] Query OrgUnit",
+					"id": "8fa4db24-cf1e-4188-b1c5-48a6741b23ff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "b4b18d2b-c92b-4d60-b4a1-f4ee0fdb5f89"
+		},
+		{
+			"name": "Access",
+			"item": [
+				{
+					"name": "[OData] Create ResearchAssignment",
+					"id": "abecbe7f-a26d-4908-85a8-9fca6319d140",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n\"IDENTITYREF\": {\"Id\": 1003032}, \r\n\"ROLEREF\": {\"Id\": 1001990}, \r\n\"ROLEASSNSTATUS\": {\"UId\": \"6ace2d1a-12e2-4568-9354-d686a6715767\"},\r\n\"VALIDFROM\": \"2020-02-01T01:00:00+01:00\", \r\n\"VALIDTO\": \"2020-12-31T01:00:00+01:00\"\r\n}\r\n\r\n{\r\n\"IDENTITYREF\": {\"Id\": 1002852}, \r\n\"ROLEREF\": {\"Id\": 1001990}, \r\n\"ROLEASSNSTATUS\": {\"UId\": \"6ace2d1a-12e2-4568-9354-d686a6715767\"},\r\n\"VALIDFROM\": \"2020-02-01T01:00:00+01:00\", \r\n\"VALIDTO\": \"2020-12-31T01:00:00+01:00\"\r\n}]"
+						},
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resourceassignment"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Get Calc Assignments of an identity",
+					"id": "a2905b84-b4b0-4913-9f90-9566e282c84e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/BuiltIn/CalculatedAssignments?$filter=Identity/Id eq 1001522&$select=AssignmentKey,AccountName&$expand=Identity,Resource,ResourceType",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"BuiltIn",
+								"CalculatedAssignments"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "Identity/Id eq 1001522"
+								},
+								{
+									"key": "$select",
+									"value": "AssignmentKey,AccountName"
+								},
+								{
+									"key": "$expand",
+									"value": "Identity,Resource,ResourceType"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Get Calc Assignments of an identity Copy",
+					"id": "38394aa6-8a6c-4840-9b6f-c7ab44709d51",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/BuiltIn/CalculatedAssignments?$filter=Identity/Id eq 1001522&$select=AssignmentKey,AccountName&$expand=Identity,Resource,ResourceType",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"BuiltIn",
+								"CalculatedAssignments"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "Identity/Id eq 1001522"
+								},
+								{
+									"key": "$select",
+									"value": "AssignmentKey,AccountName"
+								},
+								{
+									"key": "$expand",
+									"value": "Identity,Resource,ResourceType"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "9deb9381-6d52-4587-bb0f-d72c74d096ef"
+		},
+		{
+			"name": "Access Request",
+			"item": [
+				{
+					"name": "[OData] Access Request Status Item",
+					"id": "ca0f1a2a-8a45-4ba8-8572-6dbe8083fdfe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/CalculatedAssignment"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Access Requests - WORKS",
+					"id": "617026e8-0037-4598-9529-833619a07343",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IkhTMjNiN0RvN1RjYVUxUm9MSHdwSXEyNFZZZyJ9.eyJhdWQiOiIwOGVlYjZhNC00YWVlLTQwNmYtYmFhNS00OTIyOTkzZjA5ZjMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiL3YyLjAiLCJpYXQiOjE3NTk3NjMwOTEsIm5iZiI6MTc1OTc2MzA5MSwiZXhwIjoxNzU5NzY4MTA3LCJhaW8iOiJBVlFBcS84YUFBQUE2Z3BET21nZkVPc1BLaU5hbkd3cWd4aXdLUysrQ2dyZ3NZWnpBQVlFWVQ5alFzempDODBVY05QY05zMWkwRjBGbkxEMmxLczl2Y0o1TFJzcnJNRzZ4Ujg5TFpEZ1MxWTlKeFNHSzRtL0hMOD0iLCJhenAiOiI3NGQwMWE1Yi1kMzRhLTQwZGMtYjI2MS1hZjJkNTNlYWIzMTUiLCJhenBhY3IiOiIwIiwibmFtZSI6Ikhhbm5hIFVscmljaCIsIm9pZCI6IjE5ZDQ3ZjEwLTc5ZDctNDFjNy04MWY3LTE5ODcwOGE4ODBlNiIsInByZWZlcnJlZF91c2VybmFtZSI6IkhBTlVMUkA1NG12NGMub25taWNyb3NvZnQuY29tIiwicmgiOiIxLkFVNEE2NVVqVk4tMkYwYXZOUkhldGxuZmU2UzI3Z2p1U205QXVxVkpJcGtfQ2ZNV0FSbE9BQS4iLCJzY3AiOiJBUEkiLCJzaWQiOiIwMDk5ODhjOS0yMjU4LWJlOTktOTNjNi00NjFhYTZjNTM5NTkiLCJzdWIiOiJfRHRuWkw3X0V4NTFHOVJWLVhjbDlockFGY2x2TV8zZGs4UGxlem54V1hjIiwidGlkIjoiNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiIiwidXRpIjoieFpTVHJOOTlERUd0bDk1ZVlTTVdBQSIsInZlciI6IjIuMCIsInhtc19mdGQiOiJGLUtkVDl4cFVycGw5MGZvZEMzOHZmcnJLamhtWWUxSFhCa0szQXhnaW9jQlpYVnliM0JsZDJWemRDMWtjMjF6In0.JsRm_2KS0QV1r2LbJ6biE0bfJNuVMVkO_GcXFqzEmI-NxegW6E6pVDj5hKmPaWstyzOTiw84QMcofCo4rL191bnuHvNORItiIGkRBE0zszX1SW48EbJiesnx4my2ja1Nx8fMv8KyELib2h1mJDQZdVbzow_zUyf1OjWbOeZfegxNDrDUt5C2kF02llzI06SAycl1j5aKiQhjazGEDTHl_nH25HqqTfCGs9fU4dTVkpmOjpziiuhEnet6DkGb11DJ4d37ikHD-h4cpnvfYtPfkO-Q5L3v1qivzNqIVQoF8VgFhLfOelQrlRMndob2-E4H8_oCrGtNtIm8B2BBUSiVHA"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Create access request",
+					"id": "82c194a9-a196-4f85-a3ed-867a1af6b816",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation MyMutation {\r\n  createAccessRequest(\r\n    accessRequest: {reason: \"Rozi told me to do it\", identities: {id: \"5da7f8fc-0119-46b0-a6b4-06e5c78edf68\"}, \r\nresources: {id: \"fa58b111-7e91-4723-b998-2df8c0758568\"}, context: \"227266b8-4810-4ba5-98f2-a974e181adcf\"}\r\n  ) {\r\n    id\r\n    status {\r\n      approvalStatus\r\n      requestAssignmentState\r\n    }\r\n    resource {\r\n      name\r\n      id\r\n      system {\r\n        name\r\n        id\r\n      }\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Access Request for Identity Copy",
+					"id": "e6c7a30f-fe55-466c-b4f4-32a4ba97120a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"query\": \"query MyQuery { accessRequests { id beneficiary { firstName id lastName identityId } } }\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Access Requests Detailed",
+					"id": "e8fe3025-cdce-41a3-9e5b-cc03c44c5a83",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Create access request Test",
+					"id": "2b6a641b-e851-4c94-86b7-3259f5eebb25",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation MyMutation {\r\n  createAccessRequest(\r\n    accessRequest: {reason: \"Rozi told me to do it\", identities: {id: \"5da7f8fc-0119-46b0-a6b4-06e5c78edf68\"}, \r\nresources: {id: \"fa58b111-7e91-4723-b998-2df8c0758568\"}, context: \"227266b8-4810-4ba5-98f2-a974e181adcf\"}\r\n  ) {\r\n    id\r\n    status {\r\n      approvalStatus\r\n      requestAssignmentState\r\n    }\r\n    resource {\r\n      name\r\n      id\r\n      system {\r\n        name\r\n        id\r\n      }\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/1.1"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Access Request for Identity Copy",
+					"id": "37a2f230-77b4-47c6-83da-77ab97e3b89c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6InEtMjNmYWxldlpoaEQzaG05Q1Fia1A1TVF5VSJ9.eyJhdWQiOiJjNDNjNDA4Zi1jM2EzLTRkMDItYTA3MS1lYzlkMmIwM2Q4YzQiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vMjA1MDBkMjEtMTcwMC00NmI1LWI2NTMtNjhlMmViYzk4YWYwL3YyLjAiLCJpYXQiOjE3MTMyOTgyNzYsIm5iZiI6MTcxMzI5ODI3NiwiZXhwIjoxNzEzMzAyMTc2LCJhaW8iOiJBU1FBMi84V0FBQUFuUXhVSG9WQVBwUzErMjdjcGxMbnRKS1RONm0vQWFCNWdObU9VekpIazd3PSIsImF6cCI6ImM0M2M0MDhmLWMzYTMtNGQwMi1hMDcxLWVjOWQyYjAzZDhjNCIsImF6cGFjciI6IjEiLCJvaWQiOiI4NTU3NDE0NS0xNDk5LTRiNWEtYTZlMi02OTg0ZDM4ODY1ZWYiLCJyaCI6IjAuQVhnQUlRMVFJQUFYdFVhMlUyamk2OG1LOEk5QVBNU2p3d0pOb0hIc25Tc0QyTVI0QUFBLiIsInN1YiI6Ijg1NTc0MTQ1LTE0OTktNGI1YS1hNmUyLTY5ODRkMzg4NjVlZiIsInRpZCI6IjIwNTAwZDIxLTE3MDAtNDZiNS1iNjUzLTY4ZTJlYmM5OGFmMCIsInV0aSI6InozM3FjM0NYUkVDb011T3AzUDJMQUEiLCJ2ZXIiOiIyLjAifQ.9qAnKQO6sW_SiXAe_UCw74Z0CCPtFIi8oWYoV3L6xyrC_Zmd6ps1fYBCZD16ONQUp4bfBek-YNlw4nLQUN-9U1hTdI0rbNHgdD9HZOEWS1yulELDQQBL6m6cKOwqRUi3Zy0iCfLgHGrjXB1hailgpkjeZ72iXPM86fZm-d0qKOKwj0sjx5_ECqinU04wUr7iILJNFHGJFH7O4LwaEfS-Igswvq-U9ORxtfcjJ6yT_l8FHBqwAi3NuRWaDP4f9a8A1Q7BWfrVHNU512BrmJUqViWfEIoqiwn1FlIMuk7OvsA59aPyrUPDODnucE9vrj3bMdPD9eyqy07UukB__kyzKg"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest { resources(filter: \\\"Account Operators\\\")  { description id }}}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
+					},
+					"response": []
+				}
+			],
+			"id": "5a5715df-7863-4cb6-9b54-2c00650fb2f1"
+		},
+		{
+			"name": "Assignment Policy",
+			"item": [
+				{
+					"name": "[OData] Revert Assignment Policy",
+					"id": "7912285e-083f-42b0-be3a-340fa3868627",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"@odata.context\": \"http://enterpriseserver/OData/DataObjects/$metadata#Assignmentpolicy/$entity\",\r\n    \"@odata.etag\": \"W/\\\"MTA0MDg5OA==\\\"\",\r\n    \"Id\": 1024102,\r\n    \"UId\": \"3406be40-ce2a-4796-a16a-569451f6652a\",\r\n    \"CreateTime\": \"2024-01-29T19:26:31.0708643Z\",\r\n    \"ChangeTime\": \"2024-01-29T19:26:31.0718649Z\",\r\n    \"DisplayName\": \"Job Title - Treasurer\",\r\n    \"Deleted\": false,\r\n    \"DeleteTime\": \"0001-01-01T00:00:00Z\",\r\n    \"CurrentVersionId\": 1040898,\r\n    \"NAME\": \"Job Title - Treasurer\",\r\n    \"DESCRIPTION\": \"\",\r\n    \"VALIDFROM\": null,\r\n    \"VALIDTO\": null,\r\n    \"AP_IDENTITYVIEW\": \"23d7d186-84ed-4dc5-a6e8-33201d5df8b6\",\r\n    \"AP_ONLYDIRECTCTXASSN\": false,\r\n    \"AP_CONTEXTS\": [],\r\n    \"AP_RESOURCES\": [\r\n        {\r\n            \"Id\": 1011122,\r\n            \"UId\": \"dcbb8d80-3725-4629-ba8e-b7d3d81197c3\",\r\n            \"KeyValue\": null,\r\n            \"KeyProperty\": null,\r\n            \"DisplayName\": \"Read Documents\"\r\n        }\r\n    ],\r\n    \"ACCOUNTTYPE\": [\r\n        {\r\n            \"Id\": 1001411,\r\n            \"UId\": \"523bb665-b8a3-4aa3-8a8a-8bb38232447f\",\r\n            \"KeyValue\": null,\r\n            \"KeyProperty\": null,\r\n            \"DisplayName\": \"Personal\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://enterpriseserver/OData/DataObjects/Assignmentpolicy(1024102)"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Get Assignment Policy",
+					"id": "1fef5f9f-8762-4083-b0e1-d04d83e52d77",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy/1020506"
+					},
+					"response": []
+				}
+			],
+			"id": "16a0ca22-7672-46b0-9d14-cd440687766e"
+		},
+		{
+			"name": "Approval",
+			"item": [
+				{
+					"name": "[GraphQL] Get Manager Approvals",
+					"id": "060809b5-fe35-4876-940e-5ab7b718b77e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query getManagerApprovals {\r\n  accessRequestApprovalSurveyQuestions(\r\n    filters: {workflowStep: {filterValue: \"ManagerApproval\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      reason\r\n      surveyId\r\n      surveyObjectKey\r\n      workflowStep\r\n      context {\r\n        displayName\r\n        type\r\n        id\r\n      }\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resource Owner Approvals",
+					"id": "b854a3d7-2090-41cb-aa93-4644865cf3f8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IkhTMjNiN0RvN1RjYVUxUm9MSHdwSXEyNFZZZyJ9.eyJhdWQiOiIwOGVlYjZhNC00YWVlLTQwNmYtYmFhNS00OTIyOTkzZjA5ZjMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiL3YyLjAiLCJpYXQiOjE3NTk4NjYxMTAsIm5iZiI6MTc1OTg2NjExMCwiZXhwIjoxNzU5ODcxNTA1LCJhaW8iOiJBVlFBcS84YUFBQUE3SU5DaXY3S3oxQkdGV25GTnMwbUlyQ2tvVnUwODVJT0hJSmFiQUtyMkYrZ3V6a2ptUVlPS2FHVUkrb1NieSswTkhrZlZ3NUZrUTluV1pPaGZvRHkxSVlLSFg5d3pJRXlqalB6c0QvNTVLTT0iLCJhenAiOiI3NGQwMWE1Yi1kMzRhLTQwZGMtYjI2MS1hZjJkNTNlYWIzMTUiLCJhenBhY3IiOiIwIiwibmFtZSI6Ikhhbm5hIFVscmljaCIsIm9pZCI6IjE5ZDQ3ZjEwLTc5ZDctNDFjNy04MWY3LTE5ODcwOGE4ODBlNiIsInByZWZlcnJlZF91c2VybmFtZSI6IkhBTlVMUkA1NG12NGMub25taWNyb3NvZnQuY29tIiwicmgiOiIxLkFVNEE2NVVqVk4tMkYwYXZOUkhldGxuZmU2UzI3Z2p1U205QXVxVkpJcGtfQ2ZNV0FSbE9BQS4iLCJzY3AiOiJBUEkiLCJzaWQiOiIwMDk5ODhjOS0yMjU4LWJlOTktOTNjNi00NjFhYTZjNTM5NTkiLCJzdWIiOiJfRHRuWkw3X0V4NTFHOVJWLVhjbDlockFGY2x2TV8zZGs4UGxlem54V1hjIiwidGlkIjoiNTQyMzk1ZWItYjZkZi00NjE3LWFmMzUtMTFkZWI2NTlkZjdiIiwidXRpIjoiVW5jalc3Tkg1VUdCU0xjR2hIMGlBQSIsInZlciI6IjIuMCIsInhtc19mdGQiOiJSZlVXT2lIcHRXRzhsUXVNakVVTUplblFVVHZUaVEwNE92b0JreTVMdVVnQlpuSmhibU5sWXkxa2MyMXoifQ.fZjucRRDb6KqElLEpAvg3PY9O2sXjTEJ4LaV6uStw7dNHE-SoGEWpRhKLHLbiapJyKQSKlfHTjIYf_-jkCv1V927m1Ya9tpuKyP5jh9HATO1JFQxkfrBDu4VtAt-WUGHJOv-oeylHWlmkuYAxQPCfu0qZ3vsrUcNckobtqhAhzHcF5GucNkgufD2_TSTI3ibL8B_D5PM9nvu2tI90IixYS31g2UX3bXy2aNnU3BEgyE9Tv5W2cKFQvQ8ItUxxEVQQBrB3KwWzO1q92Qfp2MbN1ES8JX9mnEVdBYcu1tr461ZVrwxDyA9_JLe78dpieAGHEZo7K5ysSlHCQwwBs8LtA"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query getResourceOwnerApprovals {\r\n  accessRequestApprovalSurveyQuestions(\r\n    filters: {workflowStep: {filterValue: \"ResourceOwnerApproval\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      reason\r\n      surveyId\r\n      surveyObjectKey\r\n      workflowStep\r\n      context {\r\n        displayName\r\n        type\r\n        id\r\n      }\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				}
+			],
+			"id": "a9716b66-4aeb-41d9-b253-1424d197abdc"
+		},
+		{
+			"name": "Resource",
+			"item": [
+				{
+					"name": "[GraphQL] Get Resources for System",
+					"id": "b654cba5-94f5-46ca-af15-6c3d3f5460f2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlhSdmtvOFA3QTNVYVdTblU3Yk05blQwTWpoQSJ9.eyJhdWQiOiIzOWNiNjIxOC0xNTU5LTRkNzctYmNiZi0wZDA5NzVhMGZkZWMiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZWM2ZDFjNjItYjJkOC00MGY5LWFlMzgtMjczNWMyYmQ1OTI1L3YyLjAiLCJpYXQiOjE3MTA3NjA2MjYsIm5iZiI6MTcxMDc2MDYyNiwiZXhwIjoxNzEwNzY0NTI2LCJhaW8iOiJBU1FBMi84V0FBQUFPdmlJMDVQbmI0RFY4Mkd2RUhBY2xCWXRMN091bVhCdGxVUE9EZzVWNlpjPSIsImF6cCI6IjQwN2U3M2Q1LWVkYzUtNDhlNS05NzFmLTdlZjRiYWMzZjk0NCIsImF6cGFjciI6IjEiLCJvaWQiOiIxNDE4OWQ1Ni00YmMxLTQ1NmMtYjI5Mi0wMjMwMjcxODY5ZTkiLCJyaCI6IjAuQVJBQVloeHQ3Tml5LVVDdU9DYzF3cjFaSlJoaXl6bFpGWGROdkw4TkNYV2dfZXdRQUFBLiIsInN1YiI6IjE0MTg5ZDU2LTRiYzEtNDU2Yy1iMjkyLTAyMzAyNzE4NjllOSIsInRpZCI6ImVjNmQxYzYyLWIyZDgtNDBmOS1hZTM4LTI3MzVjMmJkNTkyNSIsInV0aSI6Ijl1MVh5TnYxZEUyM0FRcjk3R29MQUEiLCJ2ZXIiOiIyLjAifQ.du3gyv69huLlOEpJhSYjFLSuxMosSfPp_C0L-LpM1i8uJ8uW3VstKvYgBjJwDmdUJ9a6zdaRUFzgDIVqnJwTyXiu1b0ImOodkx_WcZXTVCJqqJv_R9RrTY4QIjUcewfnAIgsfextNyg6utvWRy5lPTgI6Ba_0iz61dIei7rMVTaSy_qekzSWnx8NB3OVx_5VSPuemZq9KOCLs0HVGOiK-rjMgLYmq-D4kuUlsS7ciLuYBYwhJfXPva8y_UaCY-QI-4lmJyobkBy6_J5bWvrGCU8aaCv9WF2zxpiVBLhDx4eExq3JCym_E3P0SM9OJDoLbnn_k8xHfaf7HuZUl3FQng"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest {resources(systemId: \\\"1f18d52c-9212-4754-b15f-afd5951ea713\\\", sortColumn: \\\"popularity\\\", sortOrder: ASC, includeThirdPartyExcludedResources: false, contextId: \\\"d152e0e1-5bdf-4c8f-88ea-404ee2cdc370\\\",rows:{{RetrieveMaxNumberOfResources}}, searchFilter:\\\"\\\") {id name description } }}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resource Description",
+					"id": "cba8fb16-e9e5-4496-97b2-c223ce21362f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"query\":\"query accessRequest {\\r\\n    accessRequest { resources(filter: \\\"Account Operators\\\")  { description id }}}\",\"variables\":{}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/{{ApiVersion}}"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Resource Folders",
+					"id": "b781a524-456c-4a6a-a8d9-5c4961fa9857",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Resource",
+					"id": "fcc14548-5b26-4af3-9aa8-f65f3a0ebbca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Resource Copy",
+					"id": "6f39c81f-dea3-4e4f-ae6c-771a5f5ca682",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/Assignmentpolicy()"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Resources With Filter (Not Approved, AD Security Groups)",
+					"id": "236fed19-b325-4887-8cd1-bf4614f43072",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  calculatedAssignments(\r\n    filters: {identityName: {filterValue: \"BERRY\", operator: CONTAINS}, resourceTypeName: {filterValue: \"Active Directory - Security Group\", operator: CONTAINS}, complianceStatus: {filterValue: \"NOT APPROVED\", operator: EQUALS}}\r\n  ) {\r\n    pages\r\n    total\r\n    data {\r\n      id\r\n      complianceStatus\r\n      disabled\r\n      validFrom\r\n      validTo\r\n      violations {\r\n        description\r\n        violationStatus\r\n      }\r\n      account {\r\n        accountName\r\n        accountType {\r\n          name\r\n          id\r\n        }\r\n        system {\r\n          name\r\n          id\r\n        }\r\n      }\r\n      identity {\r\n        identityId\r\n        lastName\r\n        firstName\r\n        id\r\n        accounts {\r\n          accountName\r\n          system {\r\n            name\r\n            id\r\n          }\r\n        }\r\n      }\r\n      resource {\r\n        name\r\n        id\r\n        description\r\n        system {\r\n          id\r\n          name\r\n        }\r\n        resourceType {\r\n          id\r\n          name\r\n        }\r\n      }\r\n      reason {\r\n        description\r\n        reasonType\r\n        causeObjectKey\r\n      }\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				}
+			],
+			"id": "8811a3d0-dac6-4cc8-82f2-fc511a46605e"
+		},
+		{
+			"name": "System",
+			"item": [
+				{
+					"name": "[OData] Retrieve Systems using Name query",
+					"id": "aac77920-216a-4af9-aa76-5e6e955b5cf2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/System?$filter=Name eq 'Omada Identity'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"System"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "Name eq 'Omada Identity'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Systems",
+					"id": "1e4b7e0d-336e-42eb-abf1-dde5b535ad1d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/CalculatedAssignment"
+					},
+					"response": []
+				},
+				{
+					"name": "[OData] Retrieve Systems Copy",
+					"id": "6558c1d1-29d7-4891-b110-d14b110f9eef",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"host": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/BuiltIn/CalculatedAssignments?$filter=Identity/Id eq 1000009159&$select=AssignmentKey&$expand=Identity,Resource,ResourceType",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"BuiltIn",
+								"CalculatedAssignments"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "Identity/Id eq 1000009159"
+								},
+								{
+									"key": "$select",
+									"value": "AssignmentKey"
+								},
+								{
+									"key": "$expand",
+									"value": "Identity,Resource,ResourceType"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "ef4ffdb7-4c49-462a-b003-d1afe90af9e8"
+		},
+		{
+			"name": "SoD",
+			"item": [
+				{
+					"name": "[GraphQL] Get SoD",
+					"id": "fca694cd-06f6-4451-820b-2316b96f3895",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "impersonate_user",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  accessRequests {\r\n    id\r\n    resource {\r\n      id\r\n      name\r\n      system {\r\n        id\r\n        name\r\n      }\r\n      description\r\n    }\r\n    requestedBy {\r\n      id\r\n      userName\r\n      firstName\r\n      lastName\r\n    }\r\n    beneficiary {\r\n      id\r\n      identityId\r\n      displayName\r\n      firstName\r\n      lastName\r\n      contexts {\r\n        id\r\n        name\r\n      }\r\n    }\r\n    status {\r\n      approvalStatus\r\n    }\r\n    validFrom\r\n    validTo\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/"
+					},
+					"response": []
+				}
+			],
+			"id": "1c5d752b-bd66-4732-86b6-285e12bce9af"
+		},
+		{
+			"name": "Compliance",
+			"item": [
+				{
+					"name": "[GraphQL] Get Compliance Workbench Data Copy",
+					"id": "ca858bdb-aaeb-4357-84c9-51adbb25ca75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate_User",
+								"value": "HANULR@54MV4C.ONMICROSOFT.COM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  complianceWorkbenchData(\r\n    filters: {isApplicationAccountsSystemVisible: false, showAccounts: true}\r\n  ) {\r\n    system {\r\n      systemCategory {\r\n        id\r\n      }\r\n      name\r\n    }\r\n    complianceStatus {\r\n      explicitlyApproved\r\n      implicitlyApproved\r\n      implicitlyAssigned\r\n      notApproved\r\n      inViolation\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				},
+				{
+					"name": "[GraphQL] Get Compliance Workbench Data",
+					"id": "6db3a748-0719-4458-a0ea-ed9a5ff2b6c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Impersonate_User",
+								"value": "HANULR@54MV4C.ONMICROSOFT.COM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query MyQuery {\r\n  complianceWorkbenchData(\r\n    filters: {isApplicationAccountsSystemVisible: false, showAccounts: true}\r\n  ) {\r\n    system {\r\n      systemCategory {\r\n        id\r\n      }\r\n      name\r\n    }\r\n    complianceStatus {\r\n      explicitlyApproved\r\n      implicitlyApproved\r\n      implicitlyAssigned\r\n      notApproved\r\n      inViolation\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/api/Domain/3.0"
+					},
+					"response": []
+				}
+			],
+			"id": "32aa320e-d555-4696-b52a-85f86f2d70cd"
+		},
+		{
+			"name": "IdentityCategory",
+			"item": [
+				{
+					"name": "[OData] Query Identity With Firstname LastName filter",
+					"id": "4a77806f-5e07-4404-b435-7aada58cdc05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/IdentityType"
+					},
+					"response": []
+				}
+			],
+			"id": "af4db7d1-1485-41f6-bf92-51cd4fa87808"
+		},
+		{
+			"name": "ResourceFolder",
+			"item": [
+				{
+					"name": "[GraphQL] Get Resource Folder",
+					"id": "5225c1a0-8080-4227-8981-adebe0f5e088",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Impersonate-User",
+								"value": "{{ImpersonateUser}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{OmadaInstanceURL}}/OData/DataObjects/ResourceFolder"
+					},
+					"response": []
+				}
+			],
+			"id": "f974c076-2d98-4052-8268-7dbf9f14f191"
+		},
+		{
+			"name": "[OData] Add new Tech Location",
+			"id": "105b6e71-bb9e-4848-a885-6d07fffb48d3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"NAME\": \"Sales Nordhorn\",\r\n            \"STREET\": \"Hauptstr. 23\",\r\n            \"CITY\": \"Nordhorn\",\r\n            \"POSTCODE\": \"25441\",\r\n            \"DESCRIPTION\": \"Vertriebsniederlassung\"\r\n}"
+				},
+				"url": "{{OmadaInstanceURL}}/OData/DataObjects/TECH_LOC"
+			},
+			"response": []
+		},
+		{
+			"name": "[OData] New contractor onboarding object",
+			"id": "e5041bf4-0779-4f98-bdeb-ad75017442bc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"FIRSTNAME\": \"xxxxxx\", \r\n\"LASTNAME\": \"yyyyyy\", \r\n\"JOBTITLE\": \"Assistant\", \r\n\"VALIDFROM\": \"2019-09-13T01:00:00+01:00\", \r\n\"VALIDTO\": \"2019-09-30T01:00:00+01:00\", \r\n\"CONTRACTORDEPT\": { \"Id\": 1000787 }, \r\n\"MANAGER\": [{ \"UId\": \"30527853-d21f-4f3e-92f7-eeb855f16f81\" }],\r\n\"MANAGER2\": { \"UId\": \"30527853-d21f-4f3e-92f7-eeb855f16f81\" },\r\n\"NDA_REQUIRED\": \"True\",\r\n\"ODATA_SOURCE\": \"True\"\r\n}"
+				},
+				"url": "{{OmadaInstanceURL}}/OData/DataObjects/Contr_odata_import"
+			},
+			"response": []
+		},
+		{
+			"name": "[OData] New HW Ticket",
+			"id": "f2064541-0cf7-4dae-8fde-f7db9e9a2a7a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"C_TICKET_NO\": \"0005\", \r\n\"C_ITEM_NAME\": \"Monitor HP\", \r\n\"C_SERIAL_NO\": \"ABCFU12345\", \r\n\"C_HW_TICKET_STATUS\": { \"Id\": 1000263   }, \r\n\"C_TICKET_IDENT\": { \"KeyValue\": \"EMMTAY\" }\r\n}"
+				},
+				"url": "http://{{OmadaInstanceURL}}/OData/DataObjects/C_HW_TICKET"
+			},
+			"response": []
+		},
+		{
+			"name": "http://enterpriseserver/OData/Builtin/DataObjectTypes(949)?$expand=PropertyBindings($w=Property)",
+			"id": "1c84f1bf-2218-4cc3-a2c5-d5c946a652b0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{OmadaInstanceURL}}/OData/Builtin/DataObjectTypes(949)?$expand=PropertyBindings($w=Property)",
+					"protocol": "http",
+					"host": [
+						"{{OmadaInstanceURL}}"
+					],
+					"path": [
+						"OData",
+						"Builtin",
+						"DataObjectTypes(949)"
+					],
+					"query": [
+						{
+							"key": "$expand",
+							"value": "PropertyBindings($w=Property)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[OData] Metadata",
+			"id": "10e7b88f-1ee3-4f24-a86a-c790ea991b8f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{OmadaInstanceURL}}/OData/Builtin/$metadata"
+			},
+			"response": []
+		},
+		{
+			"name": "[OData] Get Non Calculated Resource Assignments",
+			"id": "e489e757-6c0e-4676-9149-3e1c319f44aa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resourceassignment/1006500"
+			},
+			"response": []
+		},
+		{
+			"name": "[OData] Add HSA Commission assignment",
+			"id": "366b5951-8235-4f6e-869b-e25f9e35710f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"CA_IDENTITY\": {\"KeyValue\": \"SE2321000206-bmn014\", KeyProperty: \"C_HSAIDENTITY\"},\r\n\"CA_CONTEXT\": {\"KeyValue\": \"SE2321000206-U10014\", KeyProperty: \"C_HSAIDENTITY\"},\r\n\"VALIDFROM\": \"2020-02-01T01:00:00+01:00\",\r\n\"VALIDTO\": \"2025-12-31T01:00:00+01:00\"\r\n}"
+				},
+				"url": "http://enterpriseserver/OData/DataObjects/contextassignment"
+			},
+			"response": []
+		},
+		{
+			"name": "[OData] Add HSA Commission",
+			"id": "b6c57e1e-4fd8-41a2-903c-1259e939080c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"CA_IDENTITY\": { \"UId\": \"6a28e191-511d-4ae8-a3b6-b3ef80cfffa1\" },\r\n\"CA_CONTEXT\": { \"UId\": \"112aa5dd-aa4a-4cdb-b037-f66884ea7c50\" },\r\n}\r\n"
+				},
+				"url": "http://enterpriseserver/OData/DataObjects/Contr_odata_import"
+			},
+			"response": []
+		},
+		{
+			"name": "Add classification to resource \"FIS - CHANGE CUSTOMER LINE ITEMS\"",
+			"id": "95fc9f4c-377f-4b0e-b022-0b3f1123416b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Description\": \"Abcd\",\r\n    \"MANUALOWNER\": [{ \"Id\": \"1003104\" }],\r\n    \"CLT_TAGS\": [{ \"UId\": \"1934ecce-682c-498c-b43c-81f5ea9e2c9c\" }]\r\n}"
+				},
+				"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resource(1022427)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bearer Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "82292233-a7eb-4ac7-b0c2-15e1b1f6d810",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"pm.environment.set(\"AccessToken\", jsonData.access_token);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "5100205a-17e2-42ff-9a75-756487e6d1a5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "{{ClientID}}",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{Scope}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{ClientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": {
+			"scope": "{{Scope}}",
+			"clientSecret": "{{ClientSecret}}",
+			"clientId": "{{ClientID}}",
+			"grant_type": "client_credentials",
+			"tokenName": "OmadaToken",
+			"client_authentication": "body",
+			"accessTokenUrl": "{{AccessTokenURL}}",
+			"addTokenTo": "header"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "05ba9f77-f09a-4bed-9b80-e41c4fcfcf57",
+				"type": "text/javascript",
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9b51083f-1c05-4179-b1ea-d7394e71ab63",
+				"type": "text/javascript",
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
