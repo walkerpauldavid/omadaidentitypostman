@@ -946,6 +946,46 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "[OData] Query OrgUnit - Get first three records",
+					"id": "fe17791c-b374-435e-859c-a6725f078897",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{OmadaInstanceURL}}/OData/DataObjects/Identity?$filter=FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'",
+							"host": [
+								"{{OmadaInstanceURL}}"
+							],
+							"path": [
+								"OData",
+								"DataObjects",
+								"Identity"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "FIRSTNAME eq 'Emma' and LASTNAME eq 'Taylor'"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "b4b18d2b-c92b-4d60-b4a1-f4ee0fdb5f89"
