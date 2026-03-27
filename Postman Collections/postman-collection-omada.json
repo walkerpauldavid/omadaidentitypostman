@@ -1926,46 +1926,6 @@
 			"response": []
 		},
 		{
-			"name": "[OData] Add HSA Commission",
-			"id": "b6c57e1e-4fd8-41a2-903c-1259e939080c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"CA_IDENTITY\": { \"UId\": \"6a28e191-511d-4ae8-a3b6-b3ef80cfffa1\" },\r\n\"CA_CONTEXT\": { \"UId\": \"112aa5dd-aa4a-4cdb-b037-f66884ea7c50\" },\r\n}\r\n"
-				},
-				"url": "http://enterpriseserver/OData/DataObjects/Contr_odata_import"
-			},
-			"response": []
-		},
-		{
-			"name": "Add classification to resource \"FIS - CHANGE CUSTOMER LINE ITEMS\"",
-			"id": "95fc9f4c-377f-4b0e-b022-0b3f1123416b",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"Description\": \"Abcd\",\r\n    \"MANUALOWNER\": [{ \"Id\": \"1003104\" }],\r\n    \"CLT_TAGS\": [{ \"UId\": \"1934ecce-682c-498c-b43c-81f5ea9e2c9c\" }]\r\n}"
-				},
-				"url": "{{OmadaInstanceURL}}/OData/DataObjects/Resource(1022427)"
-			},
-			"response": []
-		},
-		{
 			"name": "Get Bearer Token",
 			"event": [
 				{
